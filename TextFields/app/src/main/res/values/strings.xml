@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TextFields</string>
+
+    // name passwords and log in
+    <string name="name">Enter name</string>
+    <string name="password">Enter password</string>
+    <string name="login">Log in</string>
+
+</resources>
