@@ -1,2 +1,2 @@
 # AndroidProjects
-Android tutorial projects, Java and Kotlin
+Android tutorial projects in Java and Kotlin. 
