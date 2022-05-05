@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/appBar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Mobills.Toolbar">
+            <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:navigationIcon="@drawable/ic_close_outlined" style="@style/Widget.Mobills.Toolbar" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <FrameLayout android:id="@id/progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/appBar">
+            <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="2.0dip" android:max="100" style="?android:progressBarStyleHorizontal" />
+        </FrameLayout>
+        <WebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/progress" />
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

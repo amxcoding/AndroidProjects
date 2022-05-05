@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/contentDashboardFooter" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layoutManageDashboard" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/contentManageDashboard" android:background="?selectableItemBackground" android:padding="24.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="64.0dip" android:layout_height="64.0dip" app:srcCompat="@drawable/ic_cards_outlined" />
+            <TextView android:textAppearance="?textAppearanceBody1" android:textColor="@color/color_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/gerenciar_tela_inicial" android:textAllCaps="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutNoCards" android:padding="24.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="24.0dip">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="fill_parent" android:layout_height="183.0dip" android:scaleType="fitCenter" app:srcCompat="@drawable/img_no_cards" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline6" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/sem_cards_title" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/sem_cards_message" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" />
+            <com.google.android.material.button.MaterialButton android:id="@id/btManagerCards" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:text="@string/gerenciar_meus_cards" style="@style/Widget.Mobills.Button" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgFooter" android:layout_width="321.0dip" android:layout_height="183.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="8.0dip" android:scaleType="fitCenter" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/layoutManageDashboard" app:srcCompat="@drawable/img_footer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

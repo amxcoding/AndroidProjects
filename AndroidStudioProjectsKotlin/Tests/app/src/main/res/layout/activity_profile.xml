@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:elevation="0.0dip" style="@style/Widget.Mobills.Toolbar">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="enterAlwaysCollapsed|scroll" app:title="@string/meu_perfil" style="@style/Widget.Mobills.Toolbar" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlwaysCollapsed|scroll">
+            <include android:id="@id/contentMainInfo" layout="@layout/content_profile_main_info" />
+            <include android:id="@id/contentFastInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="16.0dip" app:layout_constraintTop_toBottomOf="@id/contentMainInfo" layout="@layout/content_fast_info" />
+            <include android:id="@id/contentCardCompleteRegistration" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="24.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" app:layout_constraintTop_toBottomOf="@id/contentFastInfo" layout="@layout/content_card_complete_registration" />
+        </LinearLayout>
+        <com.google.android.material.tabs.TabLayout android:layout_gravity="center_horizontal" android:id="@id/tabLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" app:tabGravity="center" app:tabMinWidth="120.0dip" app:tabMode="fixed" style="@style/Widget.Mobills.TabLayout.OnPrimary" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:textSize="24.0sp" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quiz_title" android:layout_centerInParent="true" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/investidor_inicio" android:layout_above="@id/title" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:textSize="18.0sp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quiz_subtitle" android:layout_below="@id/title" android:layout_centerHorizontal="true" />
+    <com.google.android.material.button.MaterialButton android:id="@id/reply_later" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="@string/reply_later_text" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textAllCaps="true" style="@style/Widget.MaterialComponents.Button.TextButton" />
+    <com.google.android.material.button.MaterialButton android:id="@id/start" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginBottom="16.0dip" android:text="@string/start_quiz" android:layout_above="@id/reply_later" style="@style/Widget.Mobills.Button" />
+</RelativeLayout>

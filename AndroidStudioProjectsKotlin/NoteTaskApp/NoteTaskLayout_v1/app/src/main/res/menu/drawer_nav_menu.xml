@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
+
+        <item
+            android:icon="@drawable/ic_baseline_calendar_today_24"
+            android:title="Calendar" />
+
+        <item
+            android:icon="@drawable/ic_round_tag_24"
+            android:title="Tags" />
+
+        <item
+            android:icon="@drawable/ic_round_settings_24"
+            android:title="Settings" />
+
+    </group>
+
+
+    <item android:title="Calendar">
+
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:icon="@drawable/ic_baseline_calendar_today_24"
+                    android:title="Calendar"
+                    app:showAsAction="always" />
+
+                <item
+                    android:icon="@drawable/ic_round_tag_24"
+                    android:title="Tags"
+                    app:showAsAction="always" />
+
+                <item
+                    android:icon="@drawable/ic_round_settings_24"
+                    android:title="Settings"
+                    app:showAsAction="always" />
+            </group>
+
+        </menu>
+
+    </item>
+
+
+    <item android:title="Calendar">
+
+        <menu>
+
+            <item
+                android:icon="@drawable/ic_baseline_calendar_today_24"
+                android:title="Calendar"
+                app:showAsAction="always" />
+
+            <item
+                android:icon="@drawable/ic_round_tag_24"
+                android:title="Tags"
+                app:showAsAction="always" />
+
+            <item
+                android:icon="@drawable/ic_round_settings_24"
+                android:title="Settings"
+                app:showAsAction="always" />
+
+        </menu>
+
+    </item>
+
+</menu>

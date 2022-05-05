@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/listOverflow" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/transparent" android:layout_above="@id/fl_adplaceholder" />
+    <FrameLayout android:id="@id/fl_adplaceholder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

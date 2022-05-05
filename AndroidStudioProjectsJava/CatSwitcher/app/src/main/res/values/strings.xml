@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cat Switcher</string>
+    <string name="EnterName">Enter Name</string>
+    <string name="ClickMe">Click me!</string>
+</resources>

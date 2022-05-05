@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/contentRoot" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/contentMain" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/labelTitle" android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mover_transacoes" android:alpha="?alphaEmphasisHigh" />
+        <include android:id="@id/layoutFromCategory" layout="@layout/layout_form_category" />
+        <View android:id="@id/dividerFromCategory" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/mover_para" android:alpha="?alphaEmphasisMedium" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" app:srcCompat="@drawable/ic_chevron_down_outlined" />
+        <include android:id="@id/layoutToCategory" layout="@layout/layout_form_category" />
+        <View android:id="@id/dividerToCategory" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/contentActions" android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+            <com.google.android.material.button.MaterialButton android:id="@id/btnActionNegative" android:layout_width="0.0dip" android:layout_height="56.0dip" android:layout_marginRight="8.0dip" android:text="@string/cancelar" android:layout_weight="1.0" android:layout_marginEnd="8.0dip" app:strokeColor="?colorPrimary" style="@style/Widget.Mobills.Button.Outlined" />
+            <com.google.android.material.button.MaterialButton android:id="@id/btnActionPositive" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/mover" android:layout_weight="1.0" android:layout_marginStart="8.0dip" style="@style/Widget.Mobills.Button" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/contentProgress" android:padding="@dimen/dimen_16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_16" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:gravity="center" android:id="@id/tvProgressTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/aguarde" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle2" android:textColor="?colorOnSurface" android:gravity="center" android:id="@id/tvProgressMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="?alphaEmphasisMedium" />
+    </LinearLayout>
+</LinearLayout>

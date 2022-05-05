@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="12.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatEditText android:textSize="18.0sp" android:id="@id/valor" android:background="@null" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/insira_valor" android:drawableLeft="@drawable/ic_calculator_grey600_24dp" android:drawablePadding="16.0dip" android:inputType="numberDecimal" android:drawableStart="@drawable/ic_calculator_grey600_24dp" />
+    <View android:background="@color/grey_300" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="56.0dip" android:layout_marginStart="56.0dip" />
+    <androidx.appcompat.widget.AppCompatEditText android:id="@id/data" android:background="@null" android:padding="16.0dip" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" android:drawableLeft="@drawable/ic_today_grey600_24dp" android:drawablePadding="16.0dip" android:layout_weight="1.0" android:drawableStart="@drawable/ic_today_grey600_24dp">
+        <requestFocus />
+    </androidx.appcompat.widget.AppCompatEditText>
+    <View android:background="@color/grey_300" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="56.0dip" />
+    <Spinner android:id="@id/deConta" android:layout_width="fill_parent" android:layout_height="56.0dip" android:prompt="@string/conta_spinner" android:layout_weight="1.0" />
+</LinearLayout>

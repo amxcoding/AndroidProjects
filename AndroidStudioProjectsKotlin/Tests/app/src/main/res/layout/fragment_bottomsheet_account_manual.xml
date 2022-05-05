@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:textSize="16.0sp" android:textColor="?colorOnSurface" android:id="@id/labelTitle" android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Selecionar conta manual" android:alpha="?alphaEmphasisHigh" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvAccountsManual" android:paddingBottom="64.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

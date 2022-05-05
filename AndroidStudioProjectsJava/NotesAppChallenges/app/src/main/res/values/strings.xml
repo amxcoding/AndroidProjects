@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Notes App Challenges</string>
+    <string name="enter_note">Enter note...</string>
+    <string name="enter_title">Enter title...</string>
+</resources>

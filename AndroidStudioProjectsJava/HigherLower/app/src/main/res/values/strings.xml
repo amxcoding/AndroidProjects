@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Higher Lower</string>
+    <string name="textRange">I\'m thinking of a number between 1 and 20</string>
+    <string name="guessText">Can you guess it?</string>
+    <string name="guessButton">Guess!</string>
+
+
+    <string name="playAgain">Play again!</string>
+    <string name="quit">Quit!</string>
+
+</resources>

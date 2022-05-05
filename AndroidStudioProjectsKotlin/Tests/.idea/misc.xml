@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/abc_action_bar_title_item.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/abc_action_bar_up_container.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/abc_action_mode_close_item_material.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/abc_list_menu_item_checkbox.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/abc_screen_toolbar.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/abc_tooltip.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/action_bar_key.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/action_bar_mobills_points.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/activity_account_balance.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/activity_books_list.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/activity_decoder.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/activity_form_expense.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/activity_goal_detail.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/activity_mobills_edu.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/activity_premium_promotion.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/activity_tutorial_notification_and_sms.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/content_card_mobills_points_empty.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/recycler_item_remaining_budget.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/test_chip_zero_corner_radius.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/toolbar_spinner_item.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/toolbar_spinner_item_center.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/transferenciafixa_item.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/layout/widget_shortcut.xml" value="0.2957427536231884" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/menu/achieved_goal_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/menu/adicionar.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/menu/menu_custom_budget_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/menu/menu_filter.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/menu/menu_help.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/menu/menu_notifications.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/menu/monthly_balance_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProjectsKotlin/Tests/app/src/main/res/menu/paused_goal_menu.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

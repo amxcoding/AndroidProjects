@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline4" android:textSize="30.0sp" android:id="@id/labelTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="?alphaEmphasisHigh" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:textSize="16.0sp" android:id="@id/labelMessage" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:alpha="?alphaEmphasisMedium" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/labelTitle" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/image" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_margin="@dimen/dimen_16" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/labelMessage" app:srcCompat="@drawable/img_onboarding_0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.button.MaterialButton android:layout_gravity="bottom|center" android:id="@id/btnActionNext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_16" android:text="@string/vamos_la" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" style="@style/Widget.Mobills.Button" />
+</FrameLayout>

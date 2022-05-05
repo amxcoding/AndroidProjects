@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_16" android:text="@string/add_quick_transaction" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/add_expense" android:background="?selectableItemBackground" android:paddingTop="@dimen/dimen_8" android:paddingBottom="@dimen/dimen_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_16" android:paddingEnd="@dimen/dimen_16">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="24.0dip" android:layout_height="40.0dip" android:layout_marginRight="@dimen/dimen_8" android:tint="@color/color_primary_expense" android:layout_marginEnd="@dimen/dimen_8" app:srcCompat="@drawable/ic_trending_down_outlined" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nova_despesa" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/add_income" android:background="?selectableItemBackground" android:paddingTop="@dimen/dimen_8" android:paddingBottom="@dimen/dimen_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_16" android:paddingEnd="@dimen/dimen_16">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="24.0dip" android:layout_height="40.0dip" android:layout_marginRight="@dimen/dimen_8" android:tint="@color/color_primary_income" android:layout_marginEnd="@dimen/dimen_8" app:srcCompat="@drawable/ic_trending_up_outlined" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nova_receita" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/add_card_expense" android:background="?selectableItemBackground" android:paddingTop="@dimen/dimen_8" android:paddingBottom="@dimen/dimen_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_16" android:paddingEnd="@dimen/dimen_16">
+        <androidx.appcompat.widget.AppCompatImageView android:padding="2.0dip" android:layout_width="24.0dip" android:layout_height="40.0dip" android:layout_marginRight="@dimen/dimen_8" android:tint="@color/color_primary_credit_card" android:layout_marginEnd="@dimen/dimen_8" app:srcCompat="@drawable/ic_credit_card_outlined" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nova_despesa_cartao" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/add_transfer" android:background="?selectableItemBackground" android:paddingTop="@dimen/dimen_8" android:paddingBottom="@dimen/dimen_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_16" android:paddingEnd="@dimen/dimen_16">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="24.0dip" android:layout_height="40.0dip" android:layout_marginRight="@dimen/dimen_8" android:tint="@color/color_secondary" android:layout_marginEnd="@dimen/dimen_8" app:srcCompat="@drawable/ic_sync_variant_outlined" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_gravity="center" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nova_transferencia" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+</LinearLayout>

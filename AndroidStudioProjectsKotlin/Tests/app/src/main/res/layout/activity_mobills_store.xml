@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/color_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" style="@style/Widget.Mobills.Toolbar.Surface">
+        <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" app:navigationIcon="@drawable/ic_arrow_left_outlined" style="@style/Widget.Mobills.Toolbar.Surface" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:id="@id/layout_points" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/ic_points" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginStart="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_rewards_coin" />
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle2" android:id="@id/title_points" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:text="@string/pontos_mobills" android:alpha="0.6" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/ic_points" app:layout_constraintTop_toTopOf="parent" />
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:id="@id/points_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toEndOf="@id/ic_points" app:layout_constraintTop_toBottomOf="@id/title_points" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+        <include layout="@layout/layout_trial_banner" />
+        <FrameLayout android:id="@id/tab_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Mobills.Toolbar.Background">
+            <com.google.android.material.tabs.TabLayout android:layout_gravity="center_horizontal" android:id="@id/tabLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" app:tabGravity="center" app:tabMinWidth="120.0dip" app:tabMode="fixed" style="@style/Widget.Mobills.TabLayout">
+                <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/all_ganhar_pontos" />
+                <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trocar_pontos" />
+            </com.google.android.material.tabs.TabLayout>
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

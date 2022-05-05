@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.alert.AddAlertFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp"
+        android:elevation="20dp"
+        app:cardBackgroundColor="@color/design_default_color_secondary_variant"
+        app:cardCornerRadius="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvTitleSetExercises"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Set exercises"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/design_default_color_on_primary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleSetExercises" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnChoose"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:text="Set"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/view2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/view2"
+                app:strokeColor="@color/design_default_color_primary"
+                app:strokeWidth="2dp"
+                app:backgroundTint="@android:color/transparent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnChoose2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:text="OK"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tvCurrentChoosenExercises"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/tvCurrentChoosenExercises" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:text="Cancel"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvCurrentChoosenExercises"
+                app:layout_constraintTop_toBottomOf="@+id/tvCurrentChoosenExercises" />
+
+            <EditText
+                android:id="@+id/etAlertName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="@color/design_default_color_on_primary"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="Alert 1"
+                android:textColor="@color/design_default_color_on_primary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvLabelStartTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Alert from:"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/btnSelectStartTime"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toTopOf="@+id/btnSelectStartTime" />
+
+            <TextView
+                android:id="@+id/tvLabelSetExercises"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Exercise(s) on alert:"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/btnChoose"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/view2"
+                app:layout_constraintTop_toTopOf="@+id/btnChoose" />
+
+            <TextView
+                android:id="@+id/tvUsedForColoring"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:enabled="false"
+                android:text="purple"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="16sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+            <TextView
+                android:id="@+id/tvCurrentChoosenExercises"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:lines="3"
+                android:maxLines="3"
+                android:text="Chosen exercises: \nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/btnChoose"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvLabelSetExercises"
+                app:layout_constraintTop_toBottomOf="@+id/btnChoose" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSelectStartTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="08:00"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/view"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:strokeColor="@color/design_default_color_primary"
+                app:strokeWidth="2dp"
+                app:backgroundTint="@android:color/transparent"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="181dp" />
+
+            <TextView
+                android:id="@+id/tvLabelEndTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Alert till:"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/btnSelectEndTime"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvLabelStartTime"
+                app:layout_constraintTop_toTopOf="@+id/btnSelectEndTime" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSelectEndTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:text="18:00"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btnSelectStartTime"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/btnSelectStartTime"
+                app:strokeColor="@color/design_default_color_primary"
+                app:strokeWidth="2dp"
+                app:backgroundTint="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/tvLabelAlertInterval"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Alert interval:"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/etSetAlertInterval"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="@+id/tvLabelEndTime"
+                app:layout_constraintTop_toTopOf="@+id/etSetAlertInterval" />
+
+            <TextView
+                android:id="@+id/tvLabelRepeat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                android:text="Repeat alert on:"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/tvLabelAlertInterval"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelAlertInterval" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/design_default_color_on_primary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleSetTime" />
+
+            <TextView
+                android:id="@+id/tvTitleSetTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Set time"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="@+id/etAlertName"
+                app:layout_constraintTop_toBottomOf="@+id/etAlertName" />
+
+            <EditText
+                android:id="@+id/etSetAlertInterval"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/design_default_color_on_primary"
+                android:ems="10"
+                android:hint="E.g. 45, 60, 90 ..."
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/btnSelectEndTime"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/btnSelectEndTime" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linearLayoutCompat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border_repeat_days"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/etSetAlertInterval"
+                app:layout_constraintStart_toStartOf="@+id/tvLabelRepeat"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelRepeat">
+
+                <TextView
+                    android:id="@+id/tvMonday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="setTextColorOnClick"
+                    android:padding="10dp"
+                    android:text="MO"
+                    android:textColor="@color/change_text_color_onclick"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/tvTuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="setTextColorOnClick"
+                    android:padding="10dp"
+                    android:text="TU"
+                    android:textColor="@color/change_text_color_onclick"
+                    tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/tvWednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="setTextColorOnClick"
+                    android:padding="10dp"
+                    android:text="WE"
+                    android:textColor="@color/change_text_color_onclick"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/tvThursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="setTextColorOnClick"
+                    android:padding="10dp"
+                    android:text="TH"
+                    android:textColor="@color/change_text_color_onclick"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/tvFriday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="setTextColorOnClick"
+                    android:padding="10dp"
+                    android:text="FR"
+                    android:textColor="@color/change_text_color_onclick"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/tvSaturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="setTextColorOnClick"
+                    android:padding="10dp"
+                    android:text="SA"
+                    android:textColor="@color/change_text_color_onclick"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/tvSunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="setTextColorOnClick"
+                    android:padding="10dp"
+                    android:text="SU"
+                    android:textColor="@color/change_text_color_onclick"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_bullet_list_outlined" android:id="@id/ordenar" android:title="@string/ordenar" app:showAsAction="ifRoom" />
+    <item android:id="@id/menu_incluir_dashboard" android:title="@string/incluir_tela_inicial" android:checkable="true" app:showAsAction="never" />
+    <item android:id="@id/menu_help" android:title="@string/ajuda_" android:checkable="false" app:showAsAction="never" />
+</menu>

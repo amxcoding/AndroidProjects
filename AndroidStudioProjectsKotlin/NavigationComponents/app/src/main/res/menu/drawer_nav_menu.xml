@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/drawer1"
+        android:title="Drawer 1"
+        android:icon="@drawable/ic_drawer"/>
+
+    <item
+        android:id="@+id/drawer2"
+        android:title="Drawer 2"
+        android:icon="@drawable/ic_drawer"/>
+
+</menu>

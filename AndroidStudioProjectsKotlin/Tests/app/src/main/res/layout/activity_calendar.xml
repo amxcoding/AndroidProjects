@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:background="?colorSurface" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:background="@color/color_background" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" style="@style/Widget.Mobills.Toolbar">
+            <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="enterAlways|scroll" app:title="@string/menu_calendario" style="@style/Widget.Mobills.Toolbar.Background" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="exitUntilCollapsed|scroll">
+                <com.prolificinteractive.materialcalendarview.MaterialCalendarView android:id="@id/material_calendar" android:background="@color/color_background" android:paddingTop="10.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" app:mcv_arrowColor="@color/color_on_background" app:mcv_dateTextAppearance="?textAppearanceBody1" app:mcv_headerTextAppearance="?textAppearanceSubtitle2" app:mcv_leftArrowMask="@drawable/ic_chevron_left_outlined" app:mcv_rightArrowMask="@drawable/ic_chevron_right_outlined" app:mcv_showOtherDates="false" app:mcv_weekDayTextAppearance="?textAppearanceSubtitle1" />
+                <View android:layout_gravity="center|top" android:id="@id/month_picker_button" android:background="?selectableItemBackground" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" />
+                <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/despesas" android:drawableLeft="@drawable/icon_mini_round_despesa" android:drawablePadding="5.0dip" android:drawableStart="@drawable/icon_mini_round_despesa" android:layout_marginEnd="8.0dip" />
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/receitas" android:drawableLeft="@drawable/icon_mini_round_receita" android:drawablePadding="5.0dip" android:drawableStart="@drawable/icon_mini_round_receita" android:layout_marginEnd="8.0dip" />
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/despesas_e_receitas" android:drawableLeft="@drawable/icon_mini_round_movimentacao" android:drawablePadding="5.0dip" android:drawableStart="@drawable/icon_mini_round_movimentacao" />
+                </LinearLayout>
+            </FrameLayout>
+            <com.google.android.material.tabs.TabLayout android:layout_gravity="center_horizontal" android:id="@id/tabLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" app:tabGravity="center" app:tabMinWidth="120.0dip" app:tabMode="fixed" style="@style/Mobills.DayNight.TabLayout.Background">
+                <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/despesas" />
+                <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/receitas" />
+            </com.google.android.material.tabs.TabLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.core.widget.NestedScrollView android:orientation="vertical" android:id="@id/nestedScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:overScrollMode="never" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+            <FrameLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="20.0dip" style="@style/Widget.Mobills.Toolbar.Background" />
+                <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Widget.Mobills.Card.Page">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="parent">
+                        <include layout="@layout/layout_chip_filter" />
+                        <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </FrameLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/layoutRightDrawer" android:background="@color/color_background" android:layout_width="300.0dip" android:layout_height="fill_parent" android:choiceMode="singleChoice">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/toolbarFiltro" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1" android:textSize="20.0sp" android:textColor="@color/mdtp_white" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/filtrar" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/color_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" android:id="@id/subheadBoldTextView2" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/situacao" android:layout_marginStart="16.0dip" />
+            <RadioGroup android:layout_gravity="start" android:orientation="vertical" android:id="@id/radioGroupSituacao" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:id="@id/radioSituacaoTodos" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/todos" />
+                <RadioButton android:id="@id/radioEfetuadas" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/efetuadas" />
+                <RadioButton android:id="@id/radioPendentes" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pendentes" />
+            </RadioGroup>
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" android:paddingTop="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/menu_conta" android:layout_marginStart="16.0dip" />
+            <RadioGroup android:layout_gravity="start" android:orientation="vertical" android:id="@id/radioGroupContas" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:id="@id/radioContaTodos" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/todos" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

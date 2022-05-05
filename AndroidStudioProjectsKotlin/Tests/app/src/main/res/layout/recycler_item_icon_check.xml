@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layoutCategoria" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="46.0dip" android:paddingStart="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBox android:id="@id/checkBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_centerVertical="true" android:layout_marginEnd="8.0dip" app:buttonTint="@color/color_primary" />
+    <RelativeLayout android:id="@id/iconLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/checkBox" android:layout_centerVertical="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/branco" android:gravity="center" android:id="@id/tipo" android:background="@color/color1" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/icone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/ic_credit_card_white_48dp" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/subcategoriaIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" app:srcCompat="@drawable/subdirectory_arrow_right_grey600" />
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/color_on_background" android:ellipsize="end" android:id="@id/descricao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/default_text" android:maxLines="1" android:layout_toRightOf="@id/iconLayout" android:layout_centerVertical="true" />
+</RelativeLayout>

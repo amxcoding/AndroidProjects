@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="1.0dip" style="@style/Widget.Mobills.Toolbar.PrimaryOrSurface">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:elevation="0.0dip" app:layout_scrollFlags="enterAlwaysCollapsed" app:navigationIcon="@drawable/ic_arrow_left_outlined" app:title="@string/transacao" style="@style/Widget.Mobills.Toolbar.PrimaryOrSurface" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Mobills.Toolbar.PrimaryOrSurface">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:textColor="?colorOnPrimary" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/valor_anterior" />
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline6" android:textColor="?colorOnPrimary" android:layout_gravity="center" android:id="@id/valorInvestimento" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:paddingTop="18.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nome" android:layout_marginStart="16.0dip" />
+            <androidx.appcompat.widget.AppCompatEditText android:enabled="false" android:id="@id/editNome" android:background="@color/transparent" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:hint="@string/nome" android:maxLines="1" android:editable="false" android:drawablePadding="16.0dip" android:drawableStart="@drawable/ic_pencil_outlined" />
+            <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" style="@style/Widget.Mobills.Divider" />
+            <LinearLayout android:orientation="vertical" android:id="@id/valorLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/valor_aporte" android:layout_marginStart="16.0dip" />
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/editValor" android:background="?android:selectableItemBackground" android:padding="16.0dip" android:focusable="false" android:focusableInTouchMode="false" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/insira_valor" android:drawablePadding="16.0dip" android:drawableStart="@drawable/ic_cash_outlined" />
+                <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" style="@style/Widget.Mobills.Divider" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/data" android:layout_marginStart="16.0dip" />
+                <androidx.appcompat.widget.AppCompatEditText android:id="@id/editData" android:background="?android:selectableItemBackground" android:padding="16.0dip" android:focusable="false" android:focusableInTouchMode="false" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/data" android:drawablePadding="16.0dip" android:drawableStart="@drawable/ic_calendar_check" />
+                <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" style="@style/Widget.Mobills.Divider" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|center" android:id="@id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" app:srcCompat="@drawable/ic_check_white_bold" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

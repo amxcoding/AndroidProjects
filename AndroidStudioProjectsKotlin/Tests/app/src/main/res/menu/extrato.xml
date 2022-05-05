@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_filter_list_white_24dp" android:id="@id/config" android:title="@string/filtrar" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_more_vert_white_24dp" android:title="@string/menu" app:showAsAction="always">
+        <menu>
+            <item android:id="@id/por_tipo" android:title="@string/extrato_tipo_despesa" app:showAsAction="always" />
+            <item android:id="@id/por_conta" android:title="@string/extrato_conta" app:showAsAction="always" />
+            <item android:id="@id/grafico_despesa" android:title="@string/grafico_despesa" app:showAsAction="always" />
+            <item android:id="@id/grafico_receita" android:title="@string/grafico_receita" app:showAsAction="always" />
+            <item android:id="@id/personalizado" android:title="@string/filtrar_periodo" app:showAsAction="always" />
+        </menu>
+    </item>
+</menu>

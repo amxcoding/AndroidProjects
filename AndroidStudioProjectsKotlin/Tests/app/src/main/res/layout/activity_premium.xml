@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/color_surface" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" style="@style/Widget.Mobills.Toolbar.Surface">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlwaysCollapsed|scroll" style="@style/Widget.Mobills.Toolbar.Surface" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/nestedScroll" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/content_premium_advantages" />
+            <FrameLayout android:id="@id/contentFragment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include layout="@layout/content_premium_features" />
+            <include layout="@layout/content_premium_feedbacks" />
+            <include layout="@layout/content_premium_faq" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgFooter" android:layout_width="fill_parent" android:layout_height="184.0dip" android:scaleType="fitCenter" app:srcCompat="@drawable/img_footer" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

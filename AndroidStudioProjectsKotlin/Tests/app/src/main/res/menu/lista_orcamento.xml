@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_expand_less_white_24dp" android:id="@id/agrupar" android:visible="false" android:orderInCategory="1" android:title="@string/agrupar" app:showAsAction="ifRoom" />
+    <group android:checkableBehavior="all">
+        <item android:id="@id/menu_incluir_dashboard" android:orderInCategory="2" android:title="@string/incluir_tela_inicial" android:checkable="true" app:showAsAction="never" />
+        <item android:id="@id/mostrar_previsto" android:orderInCategory="3" android:title="@string/incluir_previsto" android:checkable="true" app:showAsAction="never" />
+    </group>
+    <item android:id="@id/sort" android:orderInCategory="4" android:title="@string/ordenar" app:showAsAction="never" />
+    <item android:id="@id/help" android:orderInCategory="5" android:title="@string/ajuda_" app:showAsAction="never" />
+</menu>

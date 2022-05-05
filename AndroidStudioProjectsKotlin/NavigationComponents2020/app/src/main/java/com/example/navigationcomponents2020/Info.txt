@@ -1,0 +1,21 @@
+Navigation component exist of three parts:
+1. Navigation graph:
+ Shows all the routes between destinations.
+
+2. NavHost:
+An empty container that displays destinations
+from your navigation graph. The navigation component
+contains a default NavHost implementation, NavHostFragment,
+that displays fragment destinations.
+
+3. NavController:
+An object that manages app navigation within a NavHost.
+The NavController orchestrates the swapping of destination
+content in the NavHost as users move throughout your app.
+
+4. Safe Args:
+Type-safe navigation and access to any associated arguments.
+
+5. Drawer:
+We need to set in activity_main the layout to DrawerLayout
+Next add a navigationview and set the attributes like layout_gravity width and id.

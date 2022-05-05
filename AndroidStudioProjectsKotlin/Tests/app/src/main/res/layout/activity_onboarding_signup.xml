@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/color_surface" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" style="@style/Widget.Mobills.Toolbar.Surface">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Mobills.Toolbar.Surface" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@id/contentFragment" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:orientation="vertical" android:id="@id/contentProgress" android:background="@color/color_surface" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/animation" android:layout_width="0.0dip" android:layout_height="280.0dip" android:layout_margin="@dimen/dimen_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:lottie_autoPlay="true" app:lottie_fileName="animations/sync_animation.json" app:lottie_loop="true" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_gravity="center" android:id="@id/labelMessageLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="@string/carregando_tres_pontos" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/animation" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

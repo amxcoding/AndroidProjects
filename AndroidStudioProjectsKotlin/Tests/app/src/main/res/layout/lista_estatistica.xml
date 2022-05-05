@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layoutMenu" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/row_icon" android:background="?android:selectableItemBackground" android:padding="16.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginRight="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" app:srcCompat="@drawable/ic_trending_up_outlined" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_gravity="center_vertical" android:id="@id/row_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/estatisticas" android:layout_toRightOf="@id/row_icon" android:layout_centerVertical="true" android:layout_toEndOf="@id/row_icon" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.Mobills.Caption" android:textColor="@color/branco" android:background="@drawable/badget_vermelho_round" android:padding="@dimen/dimen_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="4.0dip" android:text="@string/menu_despesa" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutContent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.github.ksoichiro.android.observablescrollview.ObservableListView android:id="@id/list" android:clickable="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@color/transparent" />
+    </LinearLayout>
+</LinearLayout>

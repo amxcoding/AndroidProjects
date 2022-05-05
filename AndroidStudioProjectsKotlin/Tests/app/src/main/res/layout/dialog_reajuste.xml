@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="16.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.google.android.material.card.MaterialCardView android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutTransacao" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/icone" android:background="@drawable/circle_vermelho" android:padding="8.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" app:srcCompat="@drawable/icon_106" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:id="@id/descricao" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/reajuste" android:layout_weight="1.0" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:textColor="@color/color_primary_expense" android:id="@id/valor" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/contentMoreOptions" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:textColor="?colorOnSurface" android:id="@id/opcoes" android:paddingTop="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_16" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/opcoes_avacandas" android:layout_weight="1.0" android:alpha="?alphaEmphasisMedium" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/ivChevron" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_chevron_down_outlined" />
+    </LinearLayout>
+    <RadioGroup android:orientation="vertical" android:id="@id/radioGroup" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/radio1" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="@string/criar_transacao_de_ajuste" />
+        <RadioButton android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/modificar_saldo_inicial" />
+    </RadioGroup>
+</LinearLayout>

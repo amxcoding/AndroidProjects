@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline6" android:id="@id/card_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="8.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintEnd_toStartOf="@id/card_image" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/card_image" android:layout_width="142.0dip" android:layout_height="110.0dip" android:layout_marginTop="42.0dip" android:layout_marginRight="16.0dip" android:scaleType="fitCenter" android:layout_marginEnd="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/card_title" app:srcCompat="@drawable/img_savings" />
+</androidx.constraintlayout.widget.ConstraintLayout>

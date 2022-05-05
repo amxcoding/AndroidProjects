@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/group1">
+        <item android:icon="@drawable/nav_home" android:id="@id/navigation_home" android:orderInCategory="1" android:title="@string/principal" />
+        <item android:icon="@drawable/nav_list" android:id="@id/navigation_list" android:orderInCategory="2" android:title="@string/menu_movimentacoes" />
+        <item android:icon="@drawable/nav_flag" android:id="@id/navigation_budget" android:orderInCategory="3" android:title="@string/menu_orcamento" />
+        <item android:icon="@drawable/nav_goals" android:id="@id/navigation_goals" android:visible="true" android:orderInCategory="4" android:title="@string/objetivos" />
+        <item android:icon="@drawable/nav_dots_horizontal" android:id="@id/navigation_more" android:orderInCategory="5" android:title="@string/mais_opcoes" />
+    </group>
+</menu>

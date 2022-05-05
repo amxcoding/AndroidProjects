@@ -1,0 +1,9 @@
+BUGS/FIXES:
+1. On closing the app go back to last screen instead of to the login screen. -> SOLUTION? Save instance state
+2. Empty Backstack when changing from alerts to profile/ stats -> override at backpress in the fragments??
+
+Functionality:
+1. Setup recyclerviews for alert and exercises
+2. Setup database with room
+3. Setup data charts?
+4. WorkManager for background task to notify an alert + go to the right activity after click

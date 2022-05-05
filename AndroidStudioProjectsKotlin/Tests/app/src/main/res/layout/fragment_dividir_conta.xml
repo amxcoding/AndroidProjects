@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/valor" />
+        <EditText android:id="@id/editValor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip" android:hint="0,00" android:ems="10" android:inputType="numberDecimal" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/quantidade" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/editQuantidade" android:paddingRight="110.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip" android:hint="0" android:ems="10" android:inputType="number" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageMenos" android:background="?selectableItemBackgroundBorderless" android:padding="12.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_toLeftOf="@id/imageMais" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_chevron_up_outlined" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageMais" android:background="?selectableItemBackgroundBorderless" android:padding="12.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_chevron_down_outlined" />
+        </RelativeLayout>
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/valor_individual" />
+        <androidx.appcompat.widget.AppCompatEditText android:id="@id/editValorPessoa" android:focusable="false" android:clickable="false" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip" android:hint="0,00" android:ems="10" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/valor_quantidade" />
+        <androidx.appcompat.widget.AppCompatEditText android:id="@id/editValorQuantidade" android:focusable="false" android:clickable="false" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip" android:hint="0,00" android:ems="10" />
+    </LinearLayout>
+</ScrollView>

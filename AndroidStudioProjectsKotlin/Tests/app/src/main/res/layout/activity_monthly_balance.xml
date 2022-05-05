@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" style="@style/Widget.Mobills.Toolbar">
+            <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="enterAlways|scroll" app:title="@string/balanco_mensal" style="@style/Widget.Mobills.Toolbar" />
+            <include layout="@layout/header_month_layout" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.core.widget.NestedScrollView android:id="@id/nestedScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+            <FrameLayout android:focusable="false" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="20.0dip" style="@style/Widget.Mobills.Toolbar" />
+                <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Widget.Mobills.Card.Page">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <include layout="@layout/layout_chip_filter" />
+                        <com.google.android.material.chip.ChipGroup android:layout_gravity="start" android:id="@id/chip_group" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_16" android:paddingEnd="@dimen/dimen_16" app:selectionRequired="true" app:singleSelection="true">
+                            <com.google.android.material.chip.Chip android:id="@id/category_chip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/por_categoria" style="@style/Widget.MaterialComponents.Chip.Choice" />
+                            <com.google.android.material.chip.Chip android:id="@id/account_chip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/extrato_conta" style="@style/Widget.MaterialComponents.Chip.Choice" />
+                        </com.google.android.material.chip.ChipGroup>
+                        <include layout="@layout/header_monthly_balance" />
+                        <View android:layout_width="fill_parent" android:layout_height="1.0dip" style="@style/Widget.Mobills.Divider" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/view_recyclers" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="-4.0dip" android:baselineAligned="false" android:layout_weight="1.0">
+                            <androidx.recyclerview.widget.RecyclerView android:id="@id/income_recycler" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                            <androidx.recyclerview.widget.RecyclerView android:id="@id/expense_recycler" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/empty_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <androidx.appcompat.widget.AppCompatImageView android:layout_width="250.0dip" android:layout_height="250.0dip" android:layout_marginBottom="@dimen/dimen_8" app:srcCompat="@drawable/ic_ilustras_mobills_empty_transactions" />
+                            <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/TextAppearance.Mobills.Subtitle1" android:textSize="18.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transactions_message_empty" />
+                            <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/TextAppearance.Mobills.Subtitle1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_8" android:text="@string/empty_balance_category_description" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </FrameLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/layoutRightDrawer" android:background="@color/color_background" android:layout_width="300.0dip" android:layout_height="fill_parent" android:choiceMode="singleChoice">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/toolbarFiltro" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1" android:textSize="20.0sp" android:textColor="@color/mdtp_white" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/filtrar" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <ScrollView android:id="@id/scrollViewFiltro" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" android:id="@id/subheadBoldTextView2" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/situacao" android:paddingStart="16.0dip" />
+                <RadioGroup android:layout_gravity="left" android:orientation="vertical" android:id="@id/radioGroupSituacao" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:id="@id/radioSituacaoTodos" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/todos" />
+                    <RadioButton android:id="@id/radioEfetuadas" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/efetuadas" />
+                    <RadioButton android:id="@id/radioPendentes" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pendentes" />
+                </RadioGroup>
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" android:id="@id/textContas" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_conta" />
+                <RadioGroup android:layout_gravity="left" android:orientation="vertical" android:id="@id/radioGroupContas" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:id="@id/radioContaTodos" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/todos" />
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

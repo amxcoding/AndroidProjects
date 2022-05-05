@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/start_from_scratch_navigation" app:startDestination="@id/startFromScratchStep1Fragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="Step 1" android:name="br.com.mobills.onboarding.startScratch.StartFromScratchStep1Fragment" android:id="@id/startFromScratchStep1Fragment">
+        <action android:id="@id/action_start_scratch_step1_to_step2" app:destination="@id/startFromScratchStep2Fragment" />
+        <argument android:name="options" android:defaultValue="@null" app:argType="br.com.mobills.dto.StartFromScratchRequest" app:nullable="true" />
+        <argument android:name="optionsString" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:label="StartFromScratchStep2Fragment" android:name="br.com.mobills.onboarding.startScratch.StartFromScratchStep2Fragment" android:id="@id/startFromScratchStep2Fragment">
+        <action android:id="@id/action_start_scratch_step2_to_step3" app:destination="@id/startFromScratchStep3Fragment" />
+        <argument android:name="options" android:defaultValue="@null" app:argType="br.com.mobills.dto.StartFromScratchRequest" app:nullable="true" />
+        <argument android:name="optionsString" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:label="StartFromScratchStep3Fragment" android:name="br.com.mobills.onboarding.startScratch.StartFromScratchStep3Fragment" android:id="@id/startFromScratchStep3Fragment">
+        <argument android:name="options" android:defaultValue="@null" app:argType="br.com.mobills.dto.StartFromScratchRequest" app:nullable="true" />
+    </fragment>
+</navigation>

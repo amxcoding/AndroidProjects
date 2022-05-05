@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" style="@style/Widget.Mobills.Toolbar">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="enterAlways|scroll" style="@style/Widget.Mobills.Toolbar" />
+        <include layout="@layout/layout_form_money_without_currency" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/nestedScroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="20.0dip" style="@style/Widget.Mobills.Toolbar" />
+            <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Widget.Mobills.Card.Page">
+                <include layout="@layout/layout_content_form_goal" />
+            </com.google.android.material.card.MaterialCardView>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|center" android:id="@id/btnActionSave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_16" app:layout_behavior="com.google.android.material.floatingactionbutton.FloatingActionButton$Behavior" app:srcCompat="@drawable/ic_check_white_24dp" app:useCompatPadding="true" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

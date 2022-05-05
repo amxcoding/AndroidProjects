@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:id="@id/tvOnHomeScreenTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="@string/title_add_card_on_dashboard" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/imgCardPreview" android:layout_width="350.0dip" android:layout_height="150.0dip" android:layout_marginTop="16.0dip" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:gravity="center" android:id="@id/tvExplanationBody" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        <LinearLayout android:layout_gravity="bottom" android:id="@id/contentActions" android:padding="@dimen/dimen_8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton android:textColor="?colorSecondary" android:id="@id/btnActionNegative" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_4" android:text="@string/cancelar" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dimen_4" app:strokeColor="?colorSecondary" style="@style/Widget.Mobills.Button.Outlined" />
+            <com.google.android.material.button.MaterialButton android:id="@id/btnActionPositive" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_4" android:text="@string/habilitar" android:layout_weight="1.0" android:layout_marginStart="@dimen/dimen_4" app:backgroundTint="?colorSecondary" style="@style/Widget.Mobills.Button" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

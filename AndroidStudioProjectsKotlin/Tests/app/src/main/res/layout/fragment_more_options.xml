@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/nestedScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_width="fill_parent" android:layout_height="56.0dip" style="@style/Widget.Mobills.Toolbar.Background" />
+        <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_16" style="@style/Widget.Mobills.Card.Page">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rvOptions" android:paddingBottom="128.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.google.android.material.card.MaterialCardView>
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

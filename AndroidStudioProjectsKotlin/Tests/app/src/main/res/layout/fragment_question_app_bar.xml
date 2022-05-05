@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="180.0dip" android:elevation="8.0dip" style="@style/Widget.Mobills.Toolbar.PrimaryOrSurface">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_collapseMode="pin" app:navigationIcon="@drawable/ic_close_white_24dp" style="@style/Widget.Mobills.Toolbar.PrimaryOrSurface" />
+        <RelativeLayout android:id="@id/backdrop" android:padding="16.0dip" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:layout_collapseMode="parallax" style="@style/Widget.Mobills.Toolbar.PrimaryOrSurface">
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:textSize="18.0sp" android:textStyle="bold" android:textColor="?colorOnPrimary" android:id="@id/question" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="O que você faria se tivesse investido em ações e a Bolsa apresentasse um rendimento negativo?" android:layout_alignParentBottom="true" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:textColor="?colorOnPrimary" android:id="@id/num_quiz_step" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/question" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RadioGroup android:orientation="vertical" android:id="@id/answers" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="18.0dip" android:id="@id/answer_a" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@drawable/ic_check_outlined" android:text="Menos de 36 anos" android:alpha="0.67" />
+            <RadioButton android:textSize="18.0dip" android:id="@id/answer_b" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@drawable/ic_check_outlined" android:text="Entre 36 e 55 anos" android:alpha="0.67" />
+            <RadioButton android:textSize="18.0dip" android:id="@id/answer_c" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@drawable/ic_check_outlined" android:text="Entre 56 e 65 anos" android:alpha="0.67" />
+            <RadioButton android:textSize="18.0dip" android:id="@id/answer_d" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@drawable/ic_check_outlined" android:text="Mais de 65 anos" android:alpha="0.67" />
+        </RadioGroup>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.button.MaterialButton android:layout_gravity="end|bottom|center" android:id="@id/next" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_16" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/next_question" app:icon="@drawable/ic_chevron_right_outlined" app:iconGravity="end" style="@style/Widget.Mobills.Button" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

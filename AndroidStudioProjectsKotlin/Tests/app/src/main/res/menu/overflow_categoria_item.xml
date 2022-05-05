@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@id/adicionar_icone" android:visible="true" android:title="@string/adicionar_icone" />
+        <item android:id="@id/remover_icone" android:visible="false" android:title="@string/remover_icone" />
+        <item android:id="@id/editar" android:title="@string/editar" />
+        <item android:id="@id/arquivar" android:title="@string/arquivar" />
+        <item android:id="@id/mover" android:title="@string/mover_transacoes" />
+    </group>
+</menu>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="0.0dip" android:backgroundTint="@color/transparent" app:elevation="0.0dip" app:layout_constraintTop_toTopOf="parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" android:backgroundTint="@color/transparent" app:titleTextColor="@color/color_on_background" />
+</com.google.android.material.appbar.AppBarLayout>

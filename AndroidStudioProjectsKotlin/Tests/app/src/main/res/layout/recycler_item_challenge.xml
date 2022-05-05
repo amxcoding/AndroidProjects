@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/contentCard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/contentCardContent" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/contentFlag" android:background="@drawable/bg_card_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:textColor="?colorOnPrimary" android:layout_gravity="center_horizontal" android:id="@id/tvChallengeDay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:text="@string/dia" />
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:id="@id/ivChallenge" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_margin="@dimen/dimen_8" android:transitionName="giftTransition" app:srcCompat="@drawable/ic_gamification_closed" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/contentDisabled" android:background="@drawable/mb_challenge_disabled" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/contentMain" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cartoes_arquivados" android:alpha="?alphaEmphasisHigh" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvCreditCards" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" style="@style/Widget.Mobills.Divider" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/contentProgress" android:padding="@dimen/dimen_16" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_16" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:gravity="center" android:id="@id/tvProgressTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/aguarde" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle2" android:textColor="?colorOnSurface" android:gravity="center" android:id="@id/tvProgressMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="?alphaEmphasisMedium" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/contentEmpty" android:padding="@dimen/dimen_16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_margin="@dimen/dimen_16" app:srcCompat="@drawable/img_empty_card" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:gravity="center" android:id="@id/tvEmptyTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sem_dados" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle2" android:textColor="?colorOnSurface" android:gravity="center" android:id="@id/tvEmptyMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nenhum_cartao_arquivado" android:alpha="?alphaEmphasisMedium" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

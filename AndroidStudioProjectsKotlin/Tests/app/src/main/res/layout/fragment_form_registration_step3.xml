@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/nested_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/dimen_16" android:paddingEnd="@dimen/dimen_16">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Qual seu tipo de moradia?" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/real_estate_type_field" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline5" android:gravity="center_vertical" android:id="@id/real_estate_type" android:hint="Apartamento Próprio" android:maxLines="1" style="@style/Mobills.DayNight.CompleteRegistration.TextView" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end" android:layout_width="50.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" app:srcCompat="@drawable/ic_chevron_right_outlined" />
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/complete_registration_bottom" style="@style/Widget.Mobills.Divider" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quantas pessoas moram com você?" />
+        <androidx.appcompat.widget.AppCompatEditText android:textAppearance="?textAppearanceHeadline5" android:id="@id/family_input" android:hint="4" android:maxLines="1" android:maxLength="2" android:inputType="number" style="@style/Mobills.DayNight.CompleteRegistration.EditText" />
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/complete_registration_bottom" style="@style/Widget.Mobills.Divider" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Possui veículo?" />
+        <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/radio_group_vehicle" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <com.google.android.material.radiobutton.MaterialRadioButton android:textAppearance="?textAppearanceHeadline5" android:id="@id/vehicle_yes" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sim" android:layout_weight="1.0" />
+            <com.google.android.material.radiobutton.MaterialRadioButton android:textAppearance="?textAppearanceHeadline5" android:id="@id/vehicle_no" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/nao" android:layout_weight="1.0" />
+        </RadioGroup>
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/complete_registration_bottom" style="@style/Widget.Mobills.Divider" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_vehicle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Qual seu tipo de veículo?" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/vehicle_field" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.Mobills.Headline5" android:gravity="center_vertical" android:id="@id/vehicle" android:hint="Qual seu tipo de veículo?" android:maxLines="1" android:inputType="none" style="@style/Mobills.DayNight.CompleteRegistration.TextView" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end" android:layout_width="50.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="@id/gender" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/gender" app:srcCompat="@drawable/ic_chevron_right_outlined" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/complete_registration_bottom" style="@style/Widget.Mobills.Divider" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quantos cartões de crédito você possui?" />
+        <androidx.appcompat.widget.AppCompatEditText android:textAppearance="?textAppearanceHeadline5" android:id="@id/credit_card_input" android:background="@android:color/transparent" android:hint="3" android:maxLines="1" android:maxLength="2" android:inputType="number" style="@style/Mobills.DayNight.CompleteRegistration.EditText" />
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/complete_registration_bottom" style="@style/Widget.Mobills.Divider" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:id="@id/negativado_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Você é negativado?" />
+        <RadioGroup android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <com.google.android.material.radiobutton.MaterialRadioButton android:textAppearance="?textAppearanceHeadline5" android:id="@id/negativado_yes" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sim" android:layout_weight="1.0" />
+            <com.google.android.material.radiobutton.MaterialRadioButton android:textAppearance="?textAppearanceHeadline5" android:id="@id/negativado_no" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/nao" android:layout_weight="1.0" />
+        </RadioGroup>
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/complete_registration_bottom" style="@style/Widget.Mobills.Divider" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+            <com.google.android.material.button.MaterialButton android:textColor="#ff2962ff" android:id="@id/back_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/voltar" android:layout_weight="1.0" android:layout_marginEnd="8.0dip" app:strokeColor="#ff2962ff" style="@style/Widget.Mobills.Button.Outlined" />
+            <com.google.android.material.button.MaterialButton android:id="@id/save_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/salvar" android:layout_weight="1.0" app:backgroundTint="#ff2962ff" style="@style/Widget.Mobills.Button" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_inbox_outlined" android:id="@id/arquivar" android:title="@string/arquivar" app:showAsAction="always" />
+    <item android:id="@id/mover" android:title="@string/mover_transacoes" app:showAsAction="never" />
+    <item android:id="@id/help" android:title="@string/ajuda_" app:showAsAction="never" />
+</menu>

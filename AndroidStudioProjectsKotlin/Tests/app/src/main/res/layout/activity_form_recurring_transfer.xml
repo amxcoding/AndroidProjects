@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" style="@style/Widget.Mobills.Toolbar">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="enterAlways|scroll" app:title="@string/transferencia_fixa" style="@style/Widget.Mobills.Toolbar" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceCaption" android:textColor="?colorOnPrimary" android:id="@id/tvValueLabel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/valor_da_transferencia" android:alpha="?alphaEmphasisHigh" app:layout_constraintStart_toStartOf="@id/tvMoneyValue" app:layout_constraintTop_toBottomOf="@id/tvMoneyValue" app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline4" android:textColor="?colorOnPrimary" android:id="@id/tvMoneyValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvValueLabel" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/nestedScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <FrameLayout android:focusable="false" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="20.0dip" style="@style/Widget.Mobills.Toolbar" />
+            <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Widget.Mobills.Card.Page">
+                <include layout="@layout/content_form_recurring_transfer" />
+            </com.google.android.material.card.MaterialCardView>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|center" android:id="@id/btnActionAdd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_16" app:srcCompat="@drawable/ic_check_outlined" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

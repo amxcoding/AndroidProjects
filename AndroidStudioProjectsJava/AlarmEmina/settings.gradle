@@ -1,0 +1,2 @@
+rootProject.name = "AlarmEmina"
+include ':app'

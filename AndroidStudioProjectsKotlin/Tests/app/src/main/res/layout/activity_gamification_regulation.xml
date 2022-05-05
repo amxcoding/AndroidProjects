@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" style="@style/Widget.Mobills.Toolbar.Background">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" app:layout_scrollFlags="enterAlways|scroll" app:navigationIcon="@drawable/ic_close_outlined" style="@style/Widget.Mobills.Toolbar.Background" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:id="@id/ivGamification" android:layout_width="169.0dip" android:layout_height="173.0dip" android:layout_marginTop="10.0dip" />
+            <com.google.android.material.textview.MaterialTextView android:textSize="22.0sp" android:textStyle="bold" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="Regulamento" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="?textAppearanceHeadline4" />
+            <com.google.android.material.textview.MaterialTextView android:textSize="18.0sp" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tvDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:layout_marginBottom="30.0dip" android:alpha="?alphaEmphasisMedium" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="?textAppearanceHeadline6" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/valor_inicial" />
+        <EditText android:id="@id/editValorInicial" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip" android:hint="0,00" android:inputType="numberDecimal" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/valor_incluido_mes" />
+        <EditText android:id="@id/editValorMes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip" android:hint="0,00" android:ems="10" android:inputType="numberDecimal" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/juros_por_mes" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/editJuros" android:paddingRight="110.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip" android:hint="0,50" android:ems="10" android:inputType="numberDecimal" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageViewJuros1" android:background="?selectableItemBackgroundBorderless" android:padding="12.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_toLeftOf="@id/imageViewJuros2" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_chevron_down_outlined" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageViewJuros2" android:background="?selectableItemBackgroundBorderless" android:padding="12.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_chevron_up_outlined" />
+        </RelativeLayout>
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/periodo_em_meses" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/editPeriodo" android:paddingRight="110.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip" android:hint="1" android:ems="10" android:inputType="number" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageViewPeriodo2" android:background="?selectableItemBackgroundBorderless" android:padding="12.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_toLeftOf="@id/imageViewPeriodo1" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_chevron_up_outlined" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageViewPeriodo1" android:background="?selectableItemBackgroundBorderless" android:padding="12.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_chevron_down_outlined" />
+        </RelativeLayout>
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/total_sem_juros" />
+        <EditText android:id="@id/editTotalSemJuros" android:focusable="false" android:clickable="false" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip" android:hint="0,00" android:ems="10" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/total_com_juros" />
+        <EditText android:id="@id/editTotalComJuros" android:focusable="false" android:clickable="false" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip" android:hint="0,00" android:ems="10" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:cardElevation="4.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:textSize="18.0sp" android:id="@id/chartTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/patrimonio" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/patrimonyPeriod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="22/01/2017 - 30/01/2018" />
+            <androidx.viewpager.widget.ViewPager android:id="@id/viewPagerCharts" android:layout_width="fill_parent" android:layout_height="180.0dip" />
+            <me.relex.circleindicator.CircleIndicator android:id="@id/circleIndicator" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true" android:layout_centerVertical="true" app:ci_drawable="@drawable/dots_on_background" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

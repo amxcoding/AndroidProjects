@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:cardElevation="4.0dip" app:cardUseCompatPadding="true">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/risco" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/layoutRisks" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:weightSum="5.0">
+                <LinearLayout android:orientation="vertical" android:id="@id/risk1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginBottom="6.0dip" app:cardBackgroundColor="@color/color_primary_income" app:cardCornerRadius="36.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/risk2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_weight="1.0">
+                    <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginBottom="6.0dip" app:cardBackgroundColor="@color/color_primary_income_variant" app:cardCornerRadius="36.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/risk3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_weight="1.0">
+                    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginBottom="6.0dip" app:cardBackgroundColor="#fffbc02d" app:cardCornerRadius="36.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/risk4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_weight="1.0">
+                    <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginBottom="6.0dip" app:cardBackgroundColor="@color/color_error" app:cardCornerRadius="36.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/risk5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_weight="1.0">
+                    <com.google.android.material.card.MaterialCardView android:tag="selector" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginBottom="6.0dip" app:cardBackgroundColor="@color/color_primary_expense" app:cardCornerRadius="36.0dip" style="@style/Mobills.DayNight.Corner.Medium" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:gravity="start|center" android:id="@id/riscoInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grau_de_risco" android:drawableStart="@drawable/ic_information_outline" app:drawableTint="?colorOnBackground" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/edit_goal" android:title="@string/editar" />
+    <item android:id="@id/pause_goal" android:title="@string/parar_objetivo" />
+    <item android:id="@id/delete_goal" android:title="@string/deletar" />
+</menu>

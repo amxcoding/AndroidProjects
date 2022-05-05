@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:layout_marginBottom="8.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/TextAppearance.Mobills.Subtitle1" android:id="@id/data" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/TextAppearance.Mobills.Subtitle1" android:id="@id/valor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

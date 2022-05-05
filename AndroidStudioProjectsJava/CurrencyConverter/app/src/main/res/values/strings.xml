@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="toDollar">Convert to dollar</string>
+    <string name="toEuro">Convert to euro</string>
+    <string name="nextButton">Next</string>
+    <string name="enterPound">Enter pound </string>
+    <string name="calculate">Calculate </string>
+    <string name="textView">Results </string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/contentPendingAlerts" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline5" android:textColor="?colorOnBackground" android:id="@id/labelTitlePendingAlerts" android:background="?selectableItemBackground" android:paddingTop="24.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pendencias_alertas" android:alpha="?alphaEmphasisMedium" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rvPendingAlerts" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

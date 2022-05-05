@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/contentUpdateAvailableCard" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline6" android:textColor="?colorOnBackground" android:id="@id/labelTitleConfirmEmail" android:paddingTop="24.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/notificacoes_alertas" android:alpha="?alphaEmphasisMedium" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    <com.google.android.material.card.MaterialCardView android:id="@id/cardConfirmEmail" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardUseCompatPadding="true">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/content_confirm_email" />
+    </com.google.android.material.card.MaterialCardView>
+    <include android:id="@id/cardLoading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="250.0dip" layout="@layout/content_card_loading" />
+</LinearLayout>

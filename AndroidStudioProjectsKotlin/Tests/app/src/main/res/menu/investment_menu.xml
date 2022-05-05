@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_person_circle_outlined" android:id="@id/action_profile" android:visible="false" android:title="@string/profile" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_timeline_outlined" android:id="@id/action_indexes" android:title="@string/indexes" app:showAsAction="ifRoom" />
+    <item android:id="@id/menu_incluir_dashboard" android:title="@string/incluir_tela_inicial" android:checkable="true" app:showAsAction="never" />
+</menu>

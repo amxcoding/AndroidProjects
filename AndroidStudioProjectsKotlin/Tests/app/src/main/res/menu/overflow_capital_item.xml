@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@id/extrato" android:title="@string/menu_movimentacoes" />
+        <item android:id="@id/visao_geral" android:title="@string/saldo_contas" />
+        <item android:id="@id/detalhar" android:title="@string/detalhar" />
+        <item android:id="@id/reassociar_categorias" android:title="@string/reassociar_categorias" />
+        <item android:id="@id/ajustar_balanco" android:title="@string/reajustar_saldo" />
+        <item android:id="@id/arquivar" android:title="@string/arquivar" />
+    </group>
+</menu>

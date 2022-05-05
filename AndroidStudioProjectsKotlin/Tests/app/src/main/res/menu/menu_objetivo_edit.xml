@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_pause_white" android:id="@id/pausar" android:title="@string/parar_objetivo" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_play_white" android:id="@id/ativar" android:title="@string/ativar_objetivo" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_delete_white_24dp" android:id="@id/deletar" android:title="@string/deletar" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_check_white_24dp" android:id="@id/salvar" android:title="@string/salvar" app:showAsAction="always" />
+</menu>

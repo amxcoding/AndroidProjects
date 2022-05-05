@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_check_outlined" android:id="@id/menu_efetivar" android:title="@string/efetivar" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_dots_vertical_outlined" android:id="@id/menu_overflow" android:title="@string/menu" app:showAsAction="always">
+        <menu>
+            <item android:id="@id/menu_categoria" android:title="@string/editar_categoria" app:showAsAction="never" />
+            <item android:id="@id/menu_conta" android:title="@string/editar_conta" app:showAsAction="never" />
+            <item android:id="@id/menu_etiquetas" android:title="@string/editar_etiquetas" app:showAsAction="never" />
+            <item android:id="@id/menu_delete" android:title="@string/deletar" app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/contentCard" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:cardCornerRadius="@dimen/dimen_16" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true">
+        <FrameLayout android:background="#1a00bfa5" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/ivQuoteImg" android:layout_width="fill_parent" android:layout_height="150.0dip" android:alpha="0.05" app:srcCompat="@drawable/img_citations_target" app:tint="@color/color_on_surface" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="32.0dip" app:srcCompat="@drawable/ic_mobills_large" />
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline6" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tvQuoteMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:maxLines="4" app:autoSizeTextType="uniform" />
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceCaption" android:layout_gravity="center" android:id="@id/tvQuoteAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.button.MaterialButton android:textColor="@color/color_on_surface" android:layout_gravity="center_horizontal" android:id="@id/btnActionShare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/compartilhar" app:icon="@drawable/ic_share_outlined" app:iconGravity="start" app:iconTint="@color/color_on_surface" app:rippleColor="@color/color_on_surface" style="@style/Widget.Mobills.Button.Text" />
+</LinearLayout>

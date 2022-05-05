@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/appBar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Mobills.Toolbar.PrimaryOrSurface">
+            <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_collapseMode="pin" app:navigationIcon="@drawable/ic_arrow_left_outlined" style="@style/Widget.Mobills.Toolbar.PrimaryOrSurface" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_anchor="@id/appBar" app:layout_anchorGravity="bottom" app:layout_collapseMode="pin">
+                <LinearLayout android:gravity="center|top" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/layoutMes" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Mobills.Toolbar.PrimaryOrSurface">
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageView1" android:background="?selectableItemBackgroundBorderless" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_left_white_24dp" />
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline6" android:textColor="?colorOnPrimary" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/mesNome" android:background="?selectableItemBackground" android:layout_width="150.0dip" android:layout_height="fill_parent" android:text="@string/mes" android:lines="1" />
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@id/imageView2" android:background="?selectableItemBackgroundBorderless" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/layoutFiltro" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Mobills.Toolbar.PrimaryOrSurface">
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody1" android:textColor="?colorOnPrimary" android:id="@id/subheadBoldTextView" android:paddingLeft="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filtro" android:layout_centerVertical="true" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:textColor="?colorOnPrimary" android:ellipsize="end" android:id="@id/textFilter" android:paddingLeft="12.0dip" android:paddingRight="56.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:layout_toLeftOf="@id/iconCancel" android:layout_toRightOf="@id/subheadBoldTextView" android:layout_centerVertical="true" android:layout_toEndOf="@id/subheadBoldTextView" />
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iconCancel" android:background="?selectableItemBackgroundBorderless" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?colorOnPrimary" android:layout_alignParentRight="true" app:srcCompat="@drawable/close_circle" />
+                </RelativeLayout>
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/semDados" android:paddingLeft="48.0dip" android:paddingTop="72.0dip" android:paddingRight="48.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/appBar">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="284.0dip" android:layout_marginBottom="10.0dip" app:srcCompat="@drawable/ic_ilustras_mobills_empty_transactions" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sem_dados" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/tutorial_despesa_localizacao_sem_dados" />
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/layoutRightDrawer" android:background="@color/color_surface" android:layout_width="300.0dip" android:layout_height="fill_parent" android:choiceMode="singleChoice">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/toolbarFiltro" android:background="@color/color_surface" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:background="@color/color_surface" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/filtrar" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <ScrollView android:id="@id/scrollViewFiltro" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/subheadBoldTextView2" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/situacao" />
+                <RadioGroup android:layout_gravity="left" android:orientation="vertical" android:id="@id/radioGroupSituacao" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:id="@id/radioSituacaoTodos" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/todos" />
+                    <RadioButton android:id="@id/radioEfetuadas" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/efetuadas" />
+                    <RadioButton android:id="@id/radioPendentes" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pendentes" />
+                </RadioGroup>
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/accounts_title" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_conta" />
+                <RadioGroup android:layout_gravity="left" android:orientation="vertical" android:id="@id/radioGroupContas" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:id="@id/radioContaTodos" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/todos" />
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

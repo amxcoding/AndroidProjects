@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <LinearLayout
+        android:id="@+id/settingsListViewItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/settingsName"
+            android:text="Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/settingsVal"
+            android:text="Value"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:layout_marginLeft="15dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
