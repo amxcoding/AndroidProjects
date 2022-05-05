@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/contentFeatures" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline5" android:gravity="center" android:layout_gravity="center" android:id="@id/labelFeatures" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_16" android:text="@string/mobills_premium_tudo_mais_facil" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceCaption" android:id="@id/labelFeatureBasic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/basic" android:layout_marginStart="@dimen/dimen_8" android:layout_marginEnd="@dimen/dimen_8" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceCaption" android:id="@id/labelFeaturePremium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/premium" android:layout_marginStart="@dimen/dimen_8" android:layout_marginEnd="@dimen/dimen_8" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvFeatures" android:paddingBottom="54.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline5" android:gravity="center" android:layout_gravity="center" android:id="@id/tvTimerTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="@string/premium_promo_label_timer_end" android:alpha="?alphaEmphasisHigh" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/contentTimer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:baselineAligned="false" android:weightSum="4.0" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/contentTimerDays" android:background="@drawable/bg_round_outline" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_margin="@dimen/dimen_8" android:layout_weight="1.0">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline4" android:id="@id/tvTimerDays" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceCaption" android:id="@id/labelTimerDays" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dias" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/contentTimerHours" android:background="@drawable/bg_round_outline" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_margin="@dimen/dimen_8" android:layout_weight="1.0">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline4" android:id="@id/tvTimerHours" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceCaption" android:id="@id/labelTimerHours" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/horas" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/contentTimerMinutes" android:background="@drawable/bg_round_outline" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_margin="@dimen/dimen_8" android:layout_weight="1.0">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline4" android:id="@id/tvTimerMinutes" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceCaption" android:id="@id/labelTimerMinutes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutos" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/contentTimerSeconds" android:background="@drawable/bg_round_outline" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_margin="@dimen/dimen_8" android:layout_weight="1.0">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline4" android:id="@id/tvTimerSeconds" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceCaption" android:id="@id/labelTimerSeconds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/segundos" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

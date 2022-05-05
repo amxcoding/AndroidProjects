@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/card_grafico_bar" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/textTitleGraficoBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/balanco_mensal" />
+    <LinearLayout android:id="@id/layoutGraficoBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.github.mikephil.charting.charts.BarChart android:id="@id/bargraph" android:layout_width="100.0dip" android:layout_height="120.0dip" android:layout_margin="@dimen/dimen_8" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody2" android:textColor="@color/color_primary_income" android:id="@id/valorReceitaBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/TextView04" android:layout_alignParentRight="true" />
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:id="@id/TextView04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_receita" android:maxLines="1" android:layout_toLeftOf="@id/valorReceitaBar" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_toStartOf="@id/valorReceitaBar" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody2" android:textColor="@color/color_primary_expense" android:id="@id/valorDespesaBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/TextView03" android:layout_alignParentRight="true" />
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:id="@id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_despesa" android:maxLines="1" android:layout_toLeftOf="@id/valorDespesaBar" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_toStartOf="@id/valorDespesaBar" />
+            </RelativeLayout>
+            <View android:background="@color/stroke" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="4.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:id="@id/descricao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/balanco_titulo" android:maxLines="1" android:layout_toLeftOf="@id/valorBalancoBar" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_toStartOf="@id/valorBalancoBar" />
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody2" android:id="@id/valorBalancoBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/descricao" android:layout_alignBottom="@id/descricao" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

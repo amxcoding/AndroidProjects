@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/contentCreditCard" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline5" android:textColor="?colorOnBackground" android:id="@id/labelExpensesCategory" android:paddingTop="24.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/despesas_por_categoria" android:alpha="?alphaEmphasisMedium" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    <com.google.android.material.card.MaterialCardView android:id="@id/cardExpensesCategory" android:background="?selectableItemBackground" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardUseCompatPadding="true">
+        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:paddingTop="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/dimen_8" android:paddingEnd="@dimen/dimen_8">
+            <com.github.mikephil.charting.charts.PieChart android:id="@id/graphExpensesCategory" android:layout_width="120.0dip" android:layout_height="120.0dip" android:contentDescription="@null" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/rvExpensesCategory" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rvExpensesCategory" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/graphExpensesCategory" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <include android:id="@id/cardExpensesCategoryEmpty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/content_card_expenses_category_empty" />
+</LinearLayout>

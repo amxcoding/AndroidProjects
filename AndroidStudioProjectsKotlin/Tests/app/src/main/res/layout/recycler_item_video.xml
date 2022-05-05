@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="150.0dip" app:cardCornerRadius="@dimen/dimen_16" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivVideoThumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <View android:background="#46000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="48.0dip" android:layout_height="48.0dip" app:srcCompat="@drawable/img_youtube_social_icon" />
+    </FrameLayout>
+</com.google.android.material.card.MaterialCardView>

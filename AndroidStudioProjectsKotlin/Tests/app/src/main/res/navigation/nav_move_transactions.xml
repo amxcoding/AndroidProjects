@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/navGraphMove" app:startDestination="@id/moveTransactionsOptionsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="MoveTransactionsOptionsFragment" android:name="br.com.mobills.integration.core.presentation.move_transactions.MoveTransactionsOptionsFragment" android:id="@id/moveTransactionsOptionsFragment">
+        <action android:id="@id/navigateToMoveTransactionAll" app:destination="@id/moveTransactionsAllFragment" />
+        <action android:id="@id/navigateToMoveTransactionIntegrated" app:destination="@id/moveTransactionsIntegratedFragment" />
+    </fragment>
+    <fragment android:label="MoveTransactionsFragment" android:name="br.com.mobills.integration.core.presentation.move_transactions.all.MoveTransactionsAllFragment" android:id="@id/moveTransactionsAllFragment">
+        <argument android:name="arg_category_id" android:defaultValue="0" app:argType="integer" />
+        <argument android:name="arg_category_type" android:defaultValue="0" app:argType="integer" />
+    </fragment>
+    <fragment android:label="MoveTransactionsIntegratedFragment" android:name="br.com.mobills.integration.core.presentation.move_transactions.integrated.MoveTransactionsIntegratedFragment" android:id="@id/moveTransactionsIntegratedFragment">
+        <argument android:name="arg_category_id" android:defaultValue="0" app:argType="integer" />
+        <argument android:name="arg_category_type" android:defaultValue="0" app:argType="integer" />
+        <argument android:name="arg_integration_mode" android:defaultValue="NONE" app:argType="br.com.mobills.integration.core.data.IntegrationMode" app:nullable="false" />
+    </fragment>
+</navigation>

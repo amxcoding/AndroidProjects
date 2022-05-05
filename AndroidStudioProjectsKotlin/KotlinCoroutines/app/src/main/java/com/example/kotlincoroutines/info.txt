@@ -1,0 +1,3 @@
+- suspend:
+Corresponding computation can be paused, removed from the thread, and stored in the memory.
+Meanwhile, the thread is free to be occupied with other activities.

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/contentLabels" android:paddingTop="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline6" android:id="@id/labelSession" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+        <com.google.android.material.button.MaterialButton android:id="@id/btnActionMore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ver_mais" style="@style/Widget.Mobills.Button.Text" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/contentProgress" android:layout_width="fill_parent" android:layout_height="150.0dip">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateDrawable="@drawable/pg_indeterminate_mobills" />
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rvItems" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_16" android:paddingEnd="@dimen/dimen_16" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

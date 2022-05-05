@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/contentSearch" android:background="?selectableItemBackground" android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivSearch" android:background="@drawable/btn_shape_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerInside" app:srcCompat="@drawable/ic_magnify_outlined" app:tint="#ffffffff" />
+            <androidx.appcompat.widget.AppCompatEditText android:textAppearance="?textAppearanceSubtitle1" android:layout_gravity="center_vertical" android:id="@id/edtSearch" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:hint="@string/search_account" android:maxLines="1" android:inputType="textCapSentences" android:imeOptions="actionSearch" android:layout_marginStart="@dimen/dimen_16" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/contentEmpty" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_margin="16.0dip" app:srcCompat="@drawable/img_search" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle2" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/nenhum_resultado" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        </LinearLayout>
+        <View android:id="@id/dividerSearch" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvAccounts" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/header" android:background="?selectableItemBackground" android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivAccountManager" android:background="@drawable/btn_shape_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerInside" app:srcCompat="@drawable/ic_settings_grey600_24dp" app:tint="#ffffffff" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_gravity="center_vertical" android:id="@id/tvCategoryManager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:text="@string/gerenciar_contas" android:layout_marginStart="@dimen/dimen_16" />
+        </LinearLayout>
+        <View android:id="@id/dividerHeader" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/contentAdd" android:background="?selectableItemBackground" android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:background="@drawable/btn_shape_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerInside" app:srcCompat="@drawable/ic_add_white_24dp" app:tint="#ffffffff" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:text="@string/adicionar_nova_conta" android:layout_marginStart="@dimen/dimen_16" />
+        </LinearLayout>
+        <View android:id="@id/dividerAdd" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" style="@style/Widget.Mobills.Divider" />
+    </LinearLayout>
+</FrameLayout>

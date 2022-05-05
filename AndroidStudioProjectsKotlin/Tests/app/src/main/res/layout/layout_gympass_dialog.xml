@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="fill_parent" android:layout_height="172.0dip" android:layout_marginTop="@dimen/dimen_16" app:srcCompat="@drawable/ic_gympass" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline6" android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:text="@string/parabens_" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:gravity="center" android:autoLink="email" android:layout_gravity="center" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_16" android:text="@string/gympass_error_message" />
+    <com.google.android.material.button.MaterialButton android:layout_gravity="center" android:id="@id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_8" android:text="@string/ok_vamos_la" app:backgroundTint="#ff2962ff" style="@style/Widget.Mobills.Button" />
+</LinearLayout>

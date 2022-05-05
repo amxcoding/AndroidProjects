@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/shadowLayout" android:background="@color/black_54" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="44.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" app:cardCornerRadius="@dimen/dimen_16" app:cardElevation="16.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/banner">
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutContent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <br.com.mobills.utils.MaxHeightScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="84.0dip" app:maxHeight="250.0dip">
+                    <br.com.mobills.utils.HeightWrappingViewPager android:id="@id/fragment" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </br.com.mobills.utils.MaxHeightScrollView>
+                <me.relex.circleindicator.CircleIndicator android:id="@id/circleIndicator" android:background="@color/transparent" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginBottom="8.0dip" />
+                <LinearLayout android:gravity="bottom" android:layout_gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/dimen_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+                    <androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:layout_gravity="center" android:id="@id/skipButton" android:background="?android:selectableItemBackground" android:padding="16.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/pular" android:layout_weight="2.0" />
+                    <com.google.android.material.button.MaterialButton android:textSize="12.0sp" android:textColor="@color/branco" android:gravity="center" android:layout_gravity="center" android:id="@id/nextButton" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="@string/proximo" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="148.0dip" android:src="@drawable/banner_categoria_despesa" android:scaleType="fitCenter" android:layout_centerHorizontal="true" android:elevation="18.0dip" />
+</RelativeLayout>

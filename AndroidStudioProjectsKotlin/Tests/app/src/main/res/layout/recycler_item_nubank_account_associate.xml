@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivAccount" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="@dimen/dimen_16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textview.MaterialTextView android:textSize="12.0sp" android:id="@id/labelAccountType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reserva" android:alpha="?alphaEmphasisMedium" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" app:layout_constraintStart_toEndOf="@id/ivAccount" app:layout_constraintTop_toTopOf="@id/ivAccount" style="?textAppearanceBody1" />
+    <com.google.android.material.textview.MaterialTextView android:id="@id/labelAccountName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/ivAccount" app:layout_constraintTop_toBottomOf="@id/labelAccountType" style="?textAppearanceSubtitle1" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/barrier" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="ivAccount, labelAccountName" />
+    <include android:id="@id/contentAccount" android:layout_width="fill_parent" android:layout_height="64.0dip" app:layout_constraintTop_toBottomOf="@id/barrier" layout="@layout/layout_form_account" />
+    <View android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_constraintTop_toBottomOf="@id/contentAccount" style="@style/Widget.Mobills.Divider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

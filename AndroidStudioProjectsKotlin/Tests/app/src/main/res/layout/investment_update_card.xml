@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:cardElevation="4.0dip">
+        <LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/ultimas_atualizacoes" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="160.0dip" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/atualizacoesVaziaLayout" android:paddingLeft="48.0dip" android:paddingRight="48.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="130.0dip">
+                <androidx.appcompat.widget.AppCompatImageView android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/information_outline_vector" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/grey_400" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sem_dados" />
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/detalhar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/detalhar" android:drawablePadding="8.0dip" app:drawableTint="@color/color_primary" app:icon="@drawable/ic_list_outlined" style="@style/Widget.MaterialComponents.Button.TextButton" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="right" android:id="@id/opcoesAtualizacoes" android:background="?selectableItemBackgroundBorderless" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/dots_vertical_grey" />
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

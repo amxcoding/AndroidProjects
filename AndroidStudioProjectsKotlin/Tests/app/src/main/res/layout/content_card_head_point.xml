@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:shapeAppearance="@style/ShapeAppearance.Mobills.CardOnTop"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" app:elevation="0.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:elevation="0.0dip" app:layout_scrollFlags="enterAlways|scroll" app:title="@string/meus_pontos" app:titleTextColor="@color/black" style="@style/Widget.Mobills.Toolbar.Surface" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="40.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/appBarLayout">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgCoin" android:layout_width="64.0dip" android:layout_height="64.0dip" app:layout_constraintEnd_toStartOf="@id/linearLayout11" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/img_coin" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/linearLayout11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginStart="24.0dip" app:layout_constraintBottom_toBottomOf="@id/imgCoin" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toEndOf="@id/imgCoin" app:layout_constraintTop_toTopOf="@id/imgCoin">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pontos_mobills" />
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Large" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

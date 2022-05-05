@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alerts_nav"
+    app:startDestination="@id/alerts_fragment">
+
+    <fragment
+        android:id="@+id/alerts_fragment"
+        android:name="com.example.stayactive.fragments.alert.AlertsFragment"
+        android:label="Alerts"
+        tools:layout="@layout/fragment_alerts">
+        <action
+            android:id="@+id/action_alertsfragment_to_addalertfragment"
+            app:destination="@id/add_alert_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_alert_fragment"
+        android:name="com.example.stayactive.fragments.alert.AddAlertFragment"
+        android:label="Add alert"
+        tools:layout="@layout/fragment_add_alert">
+        <action
+            android:id="@+id/action_addalertfragment_to_alertsfragment"
+            app:destination="@id/alerts_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/alerts_fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_addalertfragment_to_exercisesfragment"
+            app:destination="@id/exercises_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/exercises_fragment"
+        android:name="com.example.stayactive.fragments.ExercisesFragment"
+        android:label="Exercises"
+        tools:layout="@layout/fragment_exercises">
+        <action
+            android:id="@+id/action_exercisesfragment_to_addalertfragment"
+            app:destination="@id/add_alert_fragment"
+            app:popUpTo="@id/add_alert_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+<!--    <action-->
+<!--        android:id="@+id/action_global_alerts_fragment"-->
+<!--        app:destination="@id/alerts_fragment"-->
+<!--        app:enterAnim="@anim/slide_in_top"-->
+<!--        app:exitAnim="@anim/slide_out_bottom"-->
+<!--        app:popEnterAnim="@anim/slide_in_bottom"-->
+<!--        app:popExitAnim="@anim/slide_out_top" />-->
+
+</navigation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="?actionBarItemBackground" android:focusable="true" android:clickable="true" android:layout_width="32.0dip" android:layout_height="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:gravity="center" android:id="@id/ivIconKey" android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_gamification_key" />
+</RelativeLayout>

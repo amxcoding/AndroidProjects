@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="150.0dip" android:src="@drawable/banner_desconto_premium" android:scaleType="centerCrop" />
+    <com.google.android.material.textview.MaterialTextView android:textColor="?colorOnPrimary" android:gravity="center" android:layout_gravity="center" android:id="@id/textDesconto" android:background="@color/verde700" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="true" />
+    <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip">
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Queremos muito que você faça parte da comunidade Mobills Premium, por isso preparamos esse desconto especial para você. Aproveite agora!" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/layoutCompraAnual" android:background="@drawable/button_material_design_color" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <com.google.android.material.textview.MaterialTextView android:textColor="?colorOnPrimary" android:id="@id/textPlanoAnual" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plano_anual" android:layout_centerVertical="true" android:textAllCaps="true" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <View android:background="@color/branco" android:layout_width="90.0dip" android:layout_height="1.0dip" android:layout_centerInParent="true" />
+                            <com.google.android.material.textview.MaterialTextView android:textColor="?colorOnPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DE: 79,90" android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:textColor="?colorOnPrimary" android:gravity="center" android:layout_gravity="center" android:id="@id/textValor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="69,90" android:textAllCaps="true" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceCaption" android:gravity="center" android:layout_gravity="center" android:id="@id/textNaoQuero" android:background="?android:selectableItemBackground" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Não quero =/" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

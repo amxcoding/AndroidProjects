@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="16.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceCaption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/modo_viagem_explicacao" />
+    <androidx.appcompat.widget.AppCompatAutoCompleteTextView android:textAppearance="@style/TextAppearance.Mobills.Form.InputField" android:id="@id/edtTag" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:hint="@string/tag_viagem" android:ems="10" android:imeOptions="actionDone" />
+</LinearLayout>

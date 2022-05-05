@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_bullet_list_outlined" android:id="@id/extrato" android:title="@string/extrato_conta" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_scale_balance_outlined" android:id="@id/visao_geral" android:title="@string/saldo_contas" app:showAsAction="always" />
+</menu>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/iconLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:gravity="center" android:layout_gravity="center" android:id="@id/color" android:background="@drawable/background_category_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_centerVertical="true" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/subcategoriaIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginStart="12.0dip" app:srcCompat="@drawable/subdirectory_arrow_right_grey600" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/icone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="9.0dip" android:layout_centerVertical="true" android:layout_marginStart="9.0dip" />
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:ellipsize="end" android:id="@id/descricao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:lines="1" android:layout_marginStart="8.0dip" />
+</LinearLayout>

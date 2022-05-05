@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/animation" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_margin="@dimen/dimen_16" app:lottie_autoPlay="true" app:lottie_fileName="animations/sync_animation.json" app:lottie_loop="true" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline6" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/disconnecting_devices_message" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

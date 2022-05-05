@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/contentSearch" android:background="?selectableItemBackground" android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivSearch" android:background="@drawable/btn_shape_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerInside" app:srcCompat="@drawable/ic_magnify_outlined" app:tint="#ffffffff" />
+            <androidx.appcompat.widget.AppCompatEditText android:textAppearance="?textAppearanceSubtitle1" android:layout_gravity="center_vertical" android:id="@id/edit_search" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:hint="@string/pesquisar" android:maxLines="1" android:inputType="textCapSentences" android:imeOptions="actionSearch" android:layout_marginStart="@dimen/dimen_16" />
+        </LinearLayout>
+        <View android:id="@id/dividerSearch" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvItems" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/empty_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_16">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="100.0dip" android:layout_height="150.0dip" app:srcCompat="@drawable/img_search" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nenhum dado encontrado" />
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="40.0dip" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dlazaro66.qrcodereaderview.QRCodeReaderView android:id="@id/qrdecoderview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <ImageView android:layout_width="250.0dip" android:layout_height="250.0dip" android:src="@drawable/round_stroke_qrcode" android:layout_centerInParent="true" />
+    <br.com.mobills.views.customs.PointsOverlayView android:id="@id/points_overlay_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/result_text_view" android:background="#55000000" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <CheckBox android:textSize="14.0sp" android:textColor="@color/black_87" android:id="@id/flashlight_checkbox" android:background="@color/white_54" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="false" android:text="Ligar/Desligar flash" android:layout_alignParentBottom="true" />
+    <CheckBox android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/enable_decoding_checkbox" android:background="#99000000" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="On/Off QR decoding" android:layout_above="@id/flashlight_checkbox" />
+</RelativeLayout>

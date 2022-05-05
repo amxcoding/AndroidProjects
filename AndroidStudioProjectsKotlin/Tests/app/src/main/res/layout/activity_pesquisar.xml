@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Mobills.Toolbar.Surface">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="@null" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <androidx.appcompat.widget.AppCompatEditText android:ellipsize="end" android:id="@id/editSearch" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/pesquisar" android:lines="1" android:inputType="text" android:imeOptions="actionSearch" />
+        </com.google.android.material.appbar.MaterialToolbar>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/contentPeriodo" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_calendar_day_checked_outlined" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/textPeriodo" android:padding="@dimen/dimen_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_text" android:alpha="?alphaEmphasisMedium" android:textAllCaps="true" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_chevron_down_outlined" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyleLarge" />
+    <ListView android:id="@id/mListView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/transparent" android:layout_above="@id/totais" android:layout_below="@id/header" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/contentEmpty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_16" android:layout_centerInParent="true">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="100.0dip" android:layout_height="100.0dip" app:srcCompat="@drawable/img_search" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:textSize="18.0sp" android:gravity="center" android:id="@id/tvEmptyMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="@string/tutorial_pesquisar" android:alpha="?alphaEmphasisMedium" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/totais" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true" android:elevation="4.0dip" app:elevation="4.0dip">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:gravity="center" android:layout_gravity="center" android:id="@id/totalDespesa" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:gravity="center" android:layout_gravity="center" android:id="@id/totalReceita" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

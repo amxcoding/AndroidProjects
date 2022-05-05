@@ -1,0 +1,2 @@
+rootProject.name = "Web Views"
+include ':app'

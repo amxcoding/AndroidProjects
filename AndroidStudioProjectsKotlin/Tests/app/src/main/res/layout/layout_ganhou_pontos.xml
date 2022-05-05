@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/badget_blue_round" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:textColor="?colorOnPrimary" android:gravity="center" android:layout_gravity="center" android:id="@id/subheadWhiteTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Você acaba de ganhar" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline6" android:textColor="?colorOnPrimary" android:gravity="center" android:layout_gravity="center" android:id="@id/textQuantidade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:drawableLeft="@drawable/ic_moeda_mb" android:drawablePadding="12.0dip" />
+</LinearLayout>

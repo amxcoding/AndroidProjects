@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_chart_pie_outlined" android:id="@id/chart" android:title="@string/grafico_despesa" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_file_written_outlined" android:id="@id/details" android:title="@string/detalhar" app:showAsAction="ifRoom" />
+</menu>

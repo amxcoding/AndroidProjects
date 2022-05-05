@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" style="@style/Widget.Mobills.Toolbar">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlways|scroll" app:navigationIcon="@drawable/ic_arrow_left_outlined" app:title="@string/saldo_contas" style="@style/Widget.Mobills.Toolbar" />
+        <FrameLayout android:id="@id/toolbarTitle" android:layout_width="fill_parent" android:layout_height="?actionBarSize" style="@style/Widget.Mobills.Toolbar">
+            <Spinner android:gravity="center" android:layout_gravity="center" android:id="@id/toolbarSpinner" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/Widget.Mobills.Spinner.Toolbar" />
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/nestedScroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_gravity="top" android:id="@id/toolbarFake" android:layout_width="fill_parent" android:layout_height="20.0dip" style="@style/Widget.Mobills.Toolbar" />
+            <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Widget.Mobills.Card.Page">
+                <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.github.mikephil.charting.charts.LineChart android:id="@id/lineChart" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_margin="@dimen/dimen_8" app:layout_constraintTop_toTopOf="parent" />
+                    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/contentMonth" android:padding="@dimen/dimen_8" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/lineChart">
+                        <androidx.appcompat.widget.AppCompatTextView android:textSize="10.0sp" android:textStyle="bold" android:gravity="center" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/jan_fev" android:layout_weight="1.0" android:textAllCaps="true" />
+                        <androidx.appcompat.widget.AppCompatTextView android:textSize="10.0sp" android:textStyle="bold" android:gravity="center" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mar_abr" android:layout_weight="1.0" android:textAllCaps="true" />
+                        <androidx.appcompat.widget.AppCompatTextView android:textSize="10.0sp" android:textStyle="bold" android:gravity="center" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mai_jun" android:layout_weight="1.0" android:textAllCaps="true" />
+                        <androidx.appcompat.widget.AppCompatTextView android:textSize="10.0sp" android:textStyle="bold" android:gravity="center" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/jul_ago" android:layout_weight="1.0" android:textAllCaps="true" />
+                        <androidx.appcompat.widget.AppCompatTextView android:textSize="10.0sp" android:textStyle="bold" android:gravity="center" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/set_out" android:layout_weight="1.0" android:textAllCaps="true" />
+                        <androidx.appcompat.widget.AppCompatTextView android:textSize="10.0sp" android:textStyle="bold" android:gravity="center" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nov_dez" android:layout_weight="1.0" android:textAllCaps="true" />
+                    </LinearLayout>
+                    <View android:id="@id/viewDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/dimen_16" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" app:layout_constraintTop_toBottomOf="@id/contentMonth" style="@style/Widget.Mobills.Divider" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvMonthlyBalance" android:paddingBottom="120.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/viewDivider" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

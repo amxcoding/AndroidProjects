@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="?selectableItemBackground" android:paddingTop="@dimen/dimen_8" android:paddingBottom="@dimen/dimen_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_16" android:paddingEnd="@dimen/dimen_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/ivExpenseCategoryColor" android:layout_width="10.0dip" android:layout_height="10.0dip" app:srcCompat="@drawable/circle_grey600" />
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:ellipsize="end" android:id="@id/tvExpenseCategoryDescription" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:alpha="?alphaEmphasisHigh" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/tvExpenseCategoryValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="?alphaEmphasisHigh" />
+</LinearLayout>

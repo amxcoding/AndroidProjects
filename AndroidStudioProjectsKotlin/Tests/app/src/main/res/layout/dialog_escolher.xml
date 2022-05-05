@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layoutLista" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/titulo"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layoutTitle" android:paddingLeft="16.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="56.0dip" android:elevation="1.0dip">
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/textTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selecione_categoria" android:layout_toLeftOf="@id/iconSearch" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iconSearch" android:background="?selectableItemBackgroundBorderless" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_magnify_outlined" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/layoutEdit" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip" android:elevation="1.0dip">
+        <androidx.appcompat.widget.AppCompatEditText android:id="@id/edit" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/pesquisar" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/list" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/transparent" />
+</LinearLayout>

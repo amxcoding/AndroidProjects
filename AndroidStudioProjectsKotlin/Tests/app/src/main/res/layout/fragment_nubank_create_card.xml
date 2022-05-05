@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/contentForm" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/dimen_8" android:layout_marginEnd="@dimen/dimen_8">
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/adicionar_novo_cartao" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:textSize="16.0sp" android:id="@id/tvAccessCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="@string/criar_cartao_desc" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginTop="24.0dip">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/btnActionVoice" android:layout_width="50.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" app:srcCompat="@drawable/ic_credit_card_outlined" />
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView android:textAppearance="@style/TextAppearance.Mobills.Form.InputField" android:id="@id/edtDescription" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/descricao" android:singleLine="true" android:layout_weight="1.0" android:inputType="textCapSentences" android:imeOptions="actionDone" android:paddingStart="@dimen/dimen_16" android:paddingEnd="@dimen/dimen_16" />
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" style="@style/Widget.Mobills.Divider" />
+        <include layout="@layout/layout_form_account" />
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" style="@style/Widget.Mobills.Divider" />
+        <com.google.android.material.button.MaterialButton android:id="@id/btAddCard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="@string/proximo" style="@style/Widget.Mobills.Button" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/contentProgress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/pg_indeterminate_mobills" />
+    </FrameLayout>
+</FrameLayout>

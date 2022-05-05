@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_inbox_outlined" android:id="@id/arquivar" android:title="@string/arquivar" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_sync_variant_outlined" android:id="@id/transferir" android:title="@string/transferencia" app:showAsAction="always" />
+    <item android:id="@id/menu_incluir_dashboard" android:title="@string/incluir_tela_inicial" android:checkable="true" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_trending_up_outlined" android:id="@id/graficos" android:title="@string/graficos" app:showAsAction="ifRoom" />
+    <item android:id="@id/tranferencias_fixas" android:title="@string/transferencia_fixa" app:showAsAction="never" />
+    <item android:id="@id/padrao" android:title="@string/conta_padrao" app:showAsAction="never" />
+    <item android:id="@id/help" android:title="@string/ajuda_" app:showAsAction="never" />
+</menu>

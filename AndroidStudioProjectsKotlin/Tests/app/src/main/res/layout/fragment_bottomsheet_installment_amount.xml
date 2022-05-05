@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:paddingTop="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="@string/como_sua_transacao_se_repete" android:alpha="?alphaEmphasisHigh" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/contentInstallments" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="centerInside" app:srcCompat="@drawable/ic_copy_outlined" />
+            <androidx.appcompat.widget.AppCompatEditText android:textAppearance="@style/TextAppearance.Mobills.Form.InputField" android:id="@id/edtInstallments" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/numero_de_vezes" android:maxLines="1" android:maxLength="3" android:layout_weight="1.0" android:inputType="numberDecimal" android:imeOptions="actionDone" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.Mobills.Form.InputField" android:gravity="center" android:id="@id/tvInstalmments" android:padding="@dimen/dimen_16" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvInstallments" android:paddingBottom="82.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="300.0dip" />
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" style="@style/Widget.Mobills.Divider" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/contentFooter" android:background="?colorSurface" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton android:id="@id/btnActionPositive" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_16" android:text="@string/concluido" style="@style/Widget.Mobills.Button" />
+    </FrameLayout>
+</FrameLayout>

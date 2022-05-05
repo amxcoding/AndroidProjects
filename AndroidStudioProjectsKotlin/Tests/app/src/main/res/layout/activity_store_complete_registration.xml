@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" style="@style/Widget.Mobills.Toolbar.Background">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" app:navigationIcon="@drawable/ic_close_outlined" app:title="" style="@style/Widget.Mobills.Toolbar.Background" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="260.0dip" android:layout_height="246.0dip" app:srcCompat="@drawable/ic_store_complete_registration" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="20.0dip" android:text="Antes de continuar, que tal completar seu cadastro?" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:gravity="center|top" android:layout_gravity="center" android:id="@id/message_text" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saber quem você é vai nos ajudar a aprimorar sua jornada rumo ao sucesso financeiro, além de indicar parceiros e infoprodutos que ajudarão você a alcançar seus objetivos." android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:id="@id/contentActions" android:padding="@dimen/dimen_8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton android:id="@id/btnActionNegative" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_4" android:text="@string/cancelar" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dimen_4" app:strokeColor="?colorPrimary" style="@style/Widget.Mobills.Button.Outlined" />
+        <com.google.android.material.button.MaterialButton android:id="@id/btnActionPositive" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_4" android:text="@string/continuar" android:layout_weight="1.0" android:layout_marginStart="@dimen/dimen_4" style="@style/Widget.Mobills.Button" />
+    </LinearLayout>
+</LinearLayout>

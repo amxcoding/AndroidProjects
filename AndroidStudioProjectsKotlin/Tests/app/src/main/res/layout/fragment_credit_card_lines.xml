@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/semDados" android:paddingTop="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_16" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="48.0dip" android:paddingEnd="48.0dip">
+            <androidx.appcompat.widget.AppCompatImageView android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="200.0dip" android:contentDescription="@null" android:importantForAccessibility="no" app:srcCompat="@drawable/img_no_cards" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline1" android:textSize="20.0sp" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="@string/transactions_message_empty" />
+        </LinearLayout>
+        <com.github.mikephil.charting.charts.LineChart android:id="@id/lines_chart" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginTop="@dimen/dimen_8" />
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_item" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    </LinearLayout>
+</FrameLayout>

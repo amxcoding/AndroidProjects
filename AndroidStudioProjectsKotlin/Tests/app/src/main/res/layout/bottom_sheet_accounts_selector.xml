@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="70.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="@string/minhas_contas" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycleView" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/footer" android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton android:id="@id/btnActionNegative" android:layout_width="0.0dip" android:layout_height="56.0dip" android:layout_marginRight="8.0dip" android:text="@string/cancelar" android:layout_weight="1.0" android:layout_marginEnd="8.0dip" app:strokeColor="?colorPrimary" style="@style/Widget.Mobills.Button.Outlined" />
+        <com.google.android.material.button.MaterialButton android:id="@id/btnActionPositive" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/concluido" android:layout_weight="1.0" android:layout_marginStart="8.0dip" style="@style/Widget.Mobills.Button" />
+    </LinearLayout>
+</FrameLayout>

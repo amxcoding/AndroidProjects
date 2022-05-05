@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/contentCardError" android:background="?selectableItemBackground" android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:id="@id/ivError" android:padding="10.0dip" android:layout_width="112.0dip" android:layout_height="112.0dip" android:contentDescription="@null" app:srcCompat="@drawable/img_wifi" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline6" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tvErrorMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sem_conexao_message" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:textColor="@color/color_icon" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tvErrorDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:text="@string/sem_conexao_description" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

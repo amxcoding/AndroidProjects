@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" app:layout_scrollFlags="enterAlways|scroll" style="@style/Widget.Mobills.Toolbar.Background">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="enterAlways|scroll" app:navigationIcon="@drawable/ic_arrow_left_outlined" app:title="@string/notificacoes" style="@style/Widget.Mobills.Toolbar.Background" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" app:layout_scrollFlags="enterAlways|scroll">
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/period_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/periodo" android:alpha="0.7" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+            <HorizontalScrollView android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_8" android:paddingEnd="@dimen/dimen_8">
+                <com.google.android.material.chip.ChipGroup android:id="@id/chip_group_period" android:layout_width="wrap_content" android:layout_height="wrap_content" app:selectionRequired="true" app:singleLine="true" app:singleSelection="true">
+                    <com.google.android.material.chip.Chip android:id="@id/today" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hoje_lowcase" style="@style/Widget.Mobills.Chip.Choice" />
+                    <com.google.android.material.chip.Chip android:id="@id/yesterday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ontem_lowcase" style="@style/Widget.Mobills.Chip.Choice" />
+                    <com.google.android.material.chip.Chip android:id="@id/last_7_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ultimos_7_dias" style="@style/Widget.Mobills.Chip.Choice" />
+                    <com.google.android.material.chip.Chip android:id="@id/last_30_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/last_30_days" style="@style/Widget.Mobills.Chip.Choice" />
+                    <com.google.android.material.chip.Chip android:id="@id/lifetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lifetime" style="@style/Widget.Mobills.Chip.Choice" />
+                </com.google.android.material.chip.ChipGroup>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/nestedScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <FrameLayout android:focusable="false" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="30.0dip" style="@style/Widget.Mobills.Toolbar.Background" />
+            <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" app:cardElevation="6.0dip" style="@style/Widget.Mobills.Card.Page">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_notifications" android:paddingBottom="90.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                    <ProgressBar android:layout_gravity="center|top" android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" />
+                    <LinearLayout android:layout_gravity="center|top" android:orientation="vertical" android:id="@id/empty_state" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16">
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="200.0dip" app:srcCompat="@drawable/ic_empty_state_payments_and_alerts" />
+                        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/no_recent_notifications" />
+                        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/no_recent_notifications_message" android:alpha="0.7" />
+                    </LinearLayout>
+                </FrameLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

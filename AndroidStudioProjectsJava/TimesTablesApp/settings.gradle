@@ -1,0 +1,2 @@
+rootProject.name = "Times Tables App"
+include ':app'

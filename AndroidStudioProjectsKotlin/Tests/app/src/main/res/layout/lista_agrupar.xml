@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layoutMenu" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/row_icon" android:background="?android:selectableItemBackground" android:padding="16.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginRight="16.0dip" android:layout_marginEnd="16.0dip" app:srcCompat="@drawable/ic_copy_outlined" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_gravity="center_vertical" android:id="@id/row_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/agrupar" android:layout_toRightOf="@id/row_icon" android:layout_centerVertical="true" android:layout_toEndOf="@id/row_icon" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutContent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:padding="@dimen/dimen_16" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_bookmark_remove_outlined" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle2" android:textColor="?colorOnSurface" android:gravity="center_vertical" android:id="@id/textCategoria" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/agrupar_por_categoria" android:alpha="?alphaEmphasisMedium" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:padding="@dimen/dimen_16" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_bank_outlined" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle2" android:textColor="?colorOnSurface" android:gravity="center_vertical" android:id="@id/textConta" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/agrupar_por_conta" android:alpha="?alphaEmphasisMedium" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:padding="@dimen/dimen_16" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_check_outlined" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle2" android:textColor="?colorOnSurface" android:gravity="center_vertical" android:id="@id/textSituacao" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/agrupar_por_situacao" android:alpha="?alphaEmphasisMedium" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceCaption" android:textColor="?colorOnPrimary" android:id="@id/tvValueLabel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:alpha="?alphaEmphasisHigh" app:layout_constraintStart_toStartOf="@id/tvMoneyValue" app:layout_constraintTop_toBottomOf="@id/tvMoneyValue" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline4" android:textColor="?colorOnPrimary" android:id="@id/tvMoneyValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvValueLabel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

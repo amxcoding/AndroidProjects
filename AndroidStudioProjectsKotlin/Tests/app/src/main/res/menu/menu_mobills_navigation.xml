@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/group1">
+        <item android:icon="@drawable/ic_home_outlined" android:id="@id/navigation_home" android:orderInCategory="1" android:title="@string/principal" />
+        <item android:icon="@drawable/ic_bullet_list_outlined" android:id="@id/navigation_transactions" android:orderInCategory="2" android:title="@string/menu_movimentacoes" />
+        <item android:enabled="false" android:id="@id/navigation_fake" android:orderInCategory="3" android:title="" />
+        <item android:icon="@drawable/ic_flag_outlined" android:id="@id/navigation_budget" android:orderInCategory="4" android:title="@string/planejamento" />
+        <item android:icon="@drawable/ic_dots_horizontal_outlined" android:id="@id/navigation_more" android:orderInCategory="5" android:title="@string/menu_more" />
+    </group>
+</menu>

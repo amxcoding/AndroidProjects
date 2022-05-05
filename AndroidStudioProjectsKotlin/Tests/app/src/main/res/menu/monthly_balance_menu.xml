@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_filter_outlined" android:id="@id/filter" android:title="@string/filtrar" app:showAsAction="always" />
+    <item android:id="@id/expense_chart" android:title="@string/grafico_despesa" app:showAsAction="never" />
+    <item android:id="@id/income_chart" android:title="@string/grafico_receita" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_calendar_day_checked_outlined" android:id="@id/calendar_filter" android:title="@string/filtrar_periodo" app:showAsAction="ifRoom" />
+</menu>

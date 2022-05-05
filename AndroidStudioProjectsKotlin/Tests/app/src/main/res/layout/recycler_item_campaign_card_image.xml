@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/card_campaign_image" android:layout_width="fill_parent" android:layout_height="130.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/background_card" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/ivCampaign" android:layout_width="wrap_content" android:layout_height="130.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:scaleType="fitXY" android:maxWidth="200.0dip" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" app:srcCompat="@drawable/banner_advantage_premium_0" />
+    </FrameLayout>
+</com.google.android.material.card.MaterialCardView>

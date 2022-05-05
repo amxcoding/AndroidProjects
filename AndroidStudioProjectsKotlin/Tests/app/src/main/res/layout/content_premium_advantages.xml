@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <br.com.mobills.core.components.AutoScrollableRecyclerView android:orientation="horizontal" android:id="@id/rvAdvantages" android:layout_width="fill_parent" android:layout_height="264.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <me.relex.circleindicator.CircleIndicator2 android:layout_gravity="center" android:id="@id/indicatorAdvantages" android:layout_width="fill_parent" android:layout_height="24.0dip" app:ci_drawable="@drawable/dots_on_background" />
+</merge>

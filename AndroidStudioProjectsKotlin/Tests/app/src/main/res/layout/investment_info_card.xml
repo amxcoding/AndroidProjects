@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/cardView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:cardElevation="4.0dip">
+        <LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:textSize="18.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/informacoes" android:layout_weight="1.0" />
+                <com.google.android.material.textview.MaterialTextView android:textColor="@color/mdtp_white" android:id="@id/categoria" android:background="@drawable/rounded_square_solid" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="16.0dip" app:srcCompat="@drawable/ic_file_written_outlined" />
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:textSize="18.0sp" android:layout_gravity="center" android:id="@id/nome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reserva" android:maxLines="1" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="16.0dip" app:srcCompat="@drawable/ic_bank_outlined" />
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:textSize="18.0sp" android:layout_gravity="center" android:id="@id/tipo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CDB" android:maxLines="1" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="16.0dip" app:srcCompat="@drawable/ic_timeline_outlined" />
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:textSize="18.0sp" android:layout_gravity="center" android:id="@id/corretora" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="XP Investimentos" android:maxLines="1" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="16.0dip" app:srcCompat="@drawable/ic_calendar_checked_outlined" />
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:textSize="18.0sp" android:layout_gravity="center" android:id="@id/aniversario" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Diia 13" android:maxLines="1" />
+                </LinearLayout>
+                <com.google.android.material.button.MaterialButton android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/editar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/editar" app:icon="@drawable/ic_pencil_outlined" style="@style/Widget.MaterialComponents.Button.TextButton" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

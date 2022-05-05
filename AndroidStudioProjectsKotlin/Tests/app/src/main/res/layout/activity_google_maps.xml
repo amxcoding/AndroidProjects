@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBar" android:background="@color/vermelho500" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        <RelativeLayout android:id="@id/layoutFiltro" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:minHeight="?actionBarSize" android:layout_below="@id/toolbar">
+            <com.google.android.material.textview.MaterialTextView android:id="@id/subheadBoldTextView" android:paddingLeft="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filtro" android:layout_centerVertical="true" />
+            <TextView android:textColor="@color/azul_google_now" android:ellipsize="end" android:id="@id/textFilter" android:paddingLeft="12.0dip" android:paddingRight="56.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Carteira, Efetuadas" android:lines="1" android:layout_toLeftOf="@id/iconCancel" android:layout_toRightOf="@id/subheadBoldTextView" android:layout_centerVertical="true" android:layout_toEndOf="@id/subheadBoldTextView" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@id/map_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

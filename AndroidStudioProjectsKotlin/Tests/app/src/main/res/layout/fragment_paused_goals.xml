@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/empty_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="200.0dip" android:layout_height="200.0dip" app:srcCompat="@drawable/ic_ilustra_goals" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/TextAppearance.Mobills.Subtitle1" android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:layout_marginBottom="@dimen/dimen_8" android:text="@string/nenhum_objetivo" />
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="visible" android:layout_width="72.0dip" android:layout_height="78.0dip" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/paused_recycler_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

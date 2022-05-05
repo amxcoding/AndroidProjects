@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/contentFaq" android:background="@drawable/bg_faq" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/contentQuestion" android:background="@drawable/bg_faq_question" android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:textSize="16.0sp" android:textColor="@color/color_on_background" android:layout_gravity="center_vertical" android:id="@id/tvQuestion" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="center_vertical" android:id="@id/btnActionToggle" android:background="?selectableItemBackgroundBorderless" android:padding="@dimen/dimen_16" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_chevron_down_outlined" />
+    </LinearLayout>
+    <WebView android:id="@id/tvAnswer" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_16" />
+    <com.google.android.material.button.MaterialButton android:layout_gravity="end" android:id="@id/btnActionReadMore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Leia mais" style="@style/Widget.Mobills.Button.Text" />
+</LinearLayout>

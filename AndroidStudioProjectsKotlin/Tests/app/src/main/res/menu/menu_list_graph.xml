@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_filter_outlined" android:id="@id/menu_filter" android:visible="true" android:title="@string/filtrar" app:showAsAction="ifRoom" />
+    <item android:id="@id/menu_escolher_relatorio" android:visible="false" android:title="@string/escolher_relatorio" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_calendar_day_checked_outlined" android:id="@id/menu_periodo" android:title="@string/filtrar_periodo" app:showAsAction="ifRoom" />
+    <item android:id="@id/menu_media" android:title="@string/mostrar_media" android:checkable="true" app:showAsAction="never" />
+</menu>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:textSize="16.0sp" android:textColor="?colorOnSurface" android:id="@id/labelTitle" android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/missing_categories_title" android:alpha="?alphaEmphasisHigh" />
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:textSize="14.0sp" android:textColor="?colorOnSurface" android:id="@id/labelDescription" android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/missing_categories_description" android:alpha="?alphaEmphasisMedium" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvOptions" android:paddingBottom="64.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+    <com.google.android.material.button.MaterialButton android:id="@id/btnActionPositive" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_16" android:text="@string/entendi" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Button" />
+</LinearLayout>

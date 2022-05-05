@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:elevation="0.0dip" style="@style/Widget.Mobills.Toolbar">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="enterAlwaysCollapsed|scroll" app:title="@string/grafico_despesa" style="@style/Widget.Mobills.Toolbar" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="@dimen/dimen_16" android:layout_marginBottom="4.0dip" android:layout_marginStart="36.0dip" android:layout_marginEnd="@dimen/dimen_16">
+            <ImageView android:id="@id/card_holder_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:layout_marginEnd="10.0dip" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/TextAppearance.Mobills.Headline6" android:textColor="@color/mdtp_white" android:ellipsize="end" android:id="@id/card_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:maxLines="1" />
+        </LinearLayout>
+        <com.google.android.material.tabs.TabLayout android:layout_gravity="center_horizontal" android:id="@id/tabLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" app:tabGravity="center" app:tabMinWidth="120.0dip" app:tabMode="fixed" style="@style/Widget.Mobills.TabLayout.OnPrimary">
+            <com.google.android.material.tabs.TabItem android:icon="@drawable/ic_chart_pie_outlined" android:id="@id/pie_chart" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.google.android.material.tabs.TabItem android:icon="@drawable/ic_graph_outlined" android:id="@id/graph_chart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?colorIcon" />
+            <com.google.android.material.tabs.TabItem android:icon="@drawable/ic_line_chart_outlined" android:id="@id/lines_chart" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/nestedScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <FrameLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="20.0dip" style="@style/Widget.Mobills.Toolbar" />
+            <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Widget.Mobills.Card.Page">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="parent">
+                    <br.com.mobills.views.customs.WrapContentViewPager android:id="@id/viewPager" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

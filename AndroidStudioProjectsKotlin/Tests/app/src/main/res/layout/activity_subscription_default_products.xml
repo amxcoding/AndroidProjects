@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/activity_subscription_default_products_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.core.widget.NestedScrollView android:background="?colorSurface" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:background="?colorSurface" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.appbar.AppBarLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" bind:elevation="0.0dip">
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" bind:elevation="0.0dip" bind:navigationIcon="@drawable/ic_arrow_left_outlined" />
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/top_image" android:layout_width="176.0dip" android:layout_height="46.0dip" bind:srcCompat="@drawable/ic_mobills_premium_top" />
+                    </FrameLayout>
+                </com.google.android.material.appbar.AppBarLayout>
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/subscription_title" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" />
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:gravity="center" android:id="@id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/subscription_subtitle" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" />
+                <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/products_recycler" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" bind:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:orientation="vertical" android:background="?colorSurface" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton android:gravity="center" android:layout_gravity="center" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="16.0dip" android:text="@string/become_premium" bind:backgroundTint="@color/color_error" style="@style/Widget.Mobills.Button" />
+            <com.google.android.material.textview.MaterialTextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/subscription_terms" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

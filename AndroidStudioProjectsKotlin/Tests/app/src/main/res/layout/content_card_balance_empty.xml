@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/contentCardBalanceEmpty" android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:id="@id/ivEmptyIcon" android:padding="10.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" app:srcCompat="@drawable/ic_line_chart_outlined" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline6" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tvEmptyMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/empty_balance_message" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:textColor="@color/color_icon" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tvEmptyDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:text="@string/empty_balance_description" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

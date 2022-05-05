@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/tipo" />
+        <RadioGroup android:id="@id/radioTipo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkedButton="@id/radioTodos">
+            <RadioButton android:id="@id/radioTodos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/todos" />
+            <RadioButton android:id="@id/radioCreditos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/creditos" />
+            <RadioButton android:id="@id/radioDebitos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debitos" />
+        </RadioGroup>
+        <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/ordenar" />
+        <RadioGroup android:id="@id/radioOrder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkedButton="@id/radioCrescente">
+            <RadioButton android:id="@id/radioDecrescente" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/data_decrescente" />
+            <RadioButton android:id="@id/radioCrescente" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/data_crescente" />
+            <RadioButton android:id="@id/radioMaiorValor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/maior_valor" />
+            <RadioButton android:id="@id/radioMenorValor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menor_valor" />
+        </RadioGroup>
+        <TextView android:textStyle="bold" android:id="@id/textAno" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/ano" />
+        <RadioGroup android:id="@id/radioAnos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkedButton="@id/radioCrescente">
+            <RadioButton android:id="@id/radioTodosAnos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/todos" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>

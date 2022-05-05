@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/contentCreditCard" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline5" android:textColor="?colorOnBackground" android:id="@id/labelTitleBlog" android:paddingTop="24.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mobills_educacao" android:alpha="?alphaEmphasisMedium" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rvBlogPosts" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <include android:id="@id/cardLoading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="280.0dip" layout="@layout/content_card_loading" />
+    <include android:id="@id/contentCardError" android:visibility="gone" layout="@layout/content_card_error" />
+    <include android:id="@id/cardNoInternet" android:visibility="gone" layout="@layout/content_card_error_internet" />
+</LinearLayout>

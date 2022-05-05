@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" style="@style/Widget.Mobills.Toolbar.Background">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" app:navigationIcon="@drawable/ic_close_outlined" app:title=" " style="@style/Widget.Mobills.Toolbar.Background" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline4" android:textSize="28.0sp" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="36.0dip" android:layout_marginRight="16.0dip" android:text="@string/add_shortcut_widget" android:alpha="0.78" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle2" android:gravity="center" android:layout_gravity="center" android:id="@id/textViewAvisoConfiguracao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="36.0dip" android:layout_marginRight="20.0dip" android:text="@string/widget_configuration_mensagem_principal" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="36.0dip" android:layout_marginRight="16.0dip" android:layout_below="@id/textViewAvisoConfiguracao">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="false">
+                    <LinearLayout android:orientation="vertical" android:id="@id/layoutViewCartao" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                        <ImageView android:layout_gravity="center_horizontal" android:id="@id/imageViewCartao" android:background="@drawable/circular_shape_cartao" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:contentDescription="@string/despesa_cartao" />
+                        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceCaption" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/despesa_cartao" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/layoutViewConta" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                        <ImageView android:layout_gravity="center_horizontal" android:id="@id/imageViewConta" android:background="@drawable/circular_shape_conta" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:contentDescription="@string/listar_contas" />
+                        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceCaption" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/listar_contas" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/layoutViewTransferencia" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                        <ImageView android:layout_gravity="center_horizontal" android:id="@id/imageViewTransferencia" android:background="@drawable/circular_shape_transferencia" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:contentDescription="@string/transferencia" />
+                        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceCaption" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transferencia" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/layoutViewListReceita" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="false">
+                    <LinearLayout android:orientation="vertical" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_gravity="center" android:id="@id/imageViewListReceita" android:background="@drawable/circular_shape_lista_receita" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:contentDescription="@string/listar_receita" />
+                        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceCaption" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/listar_receita" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/layoutViewReceita" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_gravity="center" android:id="@id/imageViewReceita" android:background="@drawable/circular_shape_receita" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:contentDescription="@string/adicionar_nova_receita" />
+                        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceCaption" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adicionar_nova_receita" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/layoutViewDespesa" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_gravity="center" android:id="@id/imageViewDespesa" android:background="@drawable/circular_shape_despesa" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:contentDescription="@string/adicionar_nova_despesa" />
+                        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceCaption" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/adicionar_nova_despesa" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/layoutViewListDespesa" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_gravity="center" android:id="@id/imageViewListDespesa" android:background="@drawable/circular_shape_lista_despesa" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:contentDescription="@string/listar_despesa" />
+                        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceCaption" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/listar_despesa" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layoutDetalhes" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline6" android:gravity="center" android:layout_gravity="center" android:id="@id/labelSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/selecione_conta" />
+                    <Spinner android:id="@id/spinnerOptions" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:gravity="center" android:id="@id/textViewDescription" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" />
+            <RelativeLayout android:id="@id/linearActionBarBottom" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle2" android:gravity="center_vertical" android:id="@id/textViewCancelar" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancelar" android:drawableLeft="@drawable/ic_info_grey600_24dp" android:drawablePadding="8.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:drawableStart="@drawable/ic_info_grey600_24dp" android:layout_alignParentStart="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.button.MaterialButton android:layout_gravity="bottom" android:id="@id/textViewConcluido" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_16" android:text="@string/concluido_upper" app:backgroundTint="#ff2962ff" style="@style/Widget.Mobills.Button" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

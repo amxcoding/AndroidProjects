@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_magnify_outlined" android:id="@id/pesquisar" android:orderInCategory="1" android:title="@string/pesquisar" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_dots_vertical_outlined" android:id="@id/menu_overflow" android:orderInCategory="3" android:title="@string/menu" app:showAsAction="always" />
+</menu>

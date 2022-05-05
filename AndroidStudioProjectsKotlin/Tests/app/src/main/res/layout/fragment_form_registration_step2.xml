@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/nested_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/dimen_16" android:paddingEnd="@dimen/dimen_16">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Escolaridade" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/education_stage_field" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline5" android:gravity="center_vertical" android:id="@id/education_stage" android:hint="Escolaridade" style="@style/Mobills.DayNight.CompleteRegistration.TextView" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end" android:layout_width="50.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" app:srcCompat="@drawable/ic_chevron_right_outlined" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_occupation" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/complete_registration_bottom" style="@style/Widget.Mobills.Divider" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profissao" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/occupation_field" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.Mobills.Headline5" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/occupation" android:hint="@string/profissao" android:maxLines="1" style="@style/Mobills.DayNight.CompleteRegistration.TextView" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end" android:layout_width="50.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="@id/gender" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/gender" app:srcCompat="@drawable/ic_chevron_right_outlined" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_specialty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/complete_registration_bottom" style="@style/Widget.Mobills.Divider" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/specialty" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/specialty_field" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.Mobills.Headline5" android:gravity="center_vertical" android:id="@id/specialty" android:hint="@string/specialty" android:maxLines="1" android:inputType="none" style="@style/Mobills.DayNight.CompleteRegistration.TextView" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end" android:layout_width="50.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="@id/gender" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/gender" app:srcCompat="@drawable/ic_chevron_right_outlined" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/complete_registration_bottom" style="@style/Widget.Mobills.Divider" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_employment_type" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Relação de emprego" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/employment_type_field" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.Mobills.Headline5" android:gravity="center_vertical" android:id="@id/employment_type" android:hint="Relação de emprego" android:maxLines="1" android:inputType="none" style="@style/Mobills.DayNight.CompleteRegistration.TextView" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end" android:layout_width="50.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="@id/gender" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/gender" app:srcCompat="@drawable/ic_chevron_right_outlined" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/complete_registration_bottom" style="@style/Widget.Mobills.Divider" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Faixa de renda mensal" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/monthly_income_field" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline5" android:gravity="center_vertical" android:id="@id/monthly_income" android:hint="Faixa de renda mensal" android:maxLines="1" style="@style/Mobills.DayNight.CompleteRegistration.TextView" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end" android:layout_width="50.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" app:srcCompat="@drawable/ic_chevron_right_outlined" />
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="16.0dip" style="@style/Widget.Mobills.Divider" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+            <com.google.android.material.button.MaterialButton android:textColor="#ff2962ff" android:id="@id/back_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/voltar" android:layout_weight="1.0" android:layout_marginEnd="8.0dip" app:strokeColor="#ff2962ff" style="@style/Widget.Mobills.Button.Outlined" />
+            <com.google.android.material.button.MaterialButton android:id="@id/continue_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/continuar" android:layout_weight="1.0" app:backgroundTint="#ff2962ff" style="@style/Widget.Mobills.Button" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

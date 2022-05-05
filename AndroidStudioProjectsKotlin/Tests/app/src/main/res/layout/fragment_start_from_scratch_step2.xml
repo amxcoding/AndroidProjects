@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:orientation="vertical" android:paddingBottom="30.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="189.0dip" android:layout_height="177.0dip" app:srcCompat="@drawable/ic_start_from_scratch" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:text="@string/comecar_do_zero" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginRight="8.0dip" android:text="@string/about_to_delete_account_info" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="8.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.button.MaterialButton android:id="@id/continue_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/continuar" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" app:backgroundTint="@color/color_dialog" style="@style/Widget.Mobills.Button" />
+    <com.google.android.material.button.MaterialButton android:textColor="@color/color_dialog" android:id="@id/cancel_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/voltar" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" app:strokeColor="@color/transparent" style="@style/Widget.Mobills.Button.Outlined" />
+</LinearLayout>

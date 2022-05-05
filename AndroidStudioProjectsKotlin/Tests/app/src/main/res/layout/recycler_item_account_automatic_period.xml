@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/cardView" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkable="true" app:cardElevation="0.0dip" app:cardUseCompatPadding="true" app:strokeColor="?colorOnSurface" app:strokeWidth="1.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="24.0dip" android:paddingEnd="24.0dip">
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline6" android:textColor="?colorOnSurface" android:id="@id/labelTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="?alphaEmphasisHigh" android:textAllCaps="true" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:id="@id/labelSubtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:alpha="?alphaEmphasisMedium" />
+        <com.google.android.material.button.MaterialButton android:layout_gravity="center" android:id="@id/btnActionCustomPeriod" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" app:icon="@drawable/ic_calendar_outlined" app:iconGravity="end" style="@style/Widget.Mobills.Button.Text" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

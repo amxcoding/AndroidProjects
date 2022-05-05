@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_16" app:cardCornerRadius="16.0dip" app:cardElevation="8.0dip">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="center" android:id="@id/layoutEfetuadas" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imageCheck" android:background="@drawable/circle_verde" android:padding="4.0dip" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/ic_check_white_24dp" android:layout_alignTop="@id/layoutValor" android:layout_alignRight="@id/tipo" android:layout_centerVertical="true" android:alpha="0.9" android:layout_marginEnd="12.0dip" android:layout_alignEnd="@id/tipo" />
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline1" android:textSize="12.0sp" android:textColor="@color/color_primary_income" android:gravity="center" android:id="@id/valorEfetuadas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@id/imageCheck" android:layout_toEndOf="@id/imageCheck" />
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:textSize="15.0sp" android:id="@id/textEfetuadas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pago" android:layout_below="@id/imageCheck" android:layout_alignLeft="@id/valorEfetuadas" android:layout_alignStart="@id/valorEfetuadas" />
+            </RelativeLayout>
+            <View android:layout_width="0.0dip" android:layout_height="56.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+            <RelativeLayout android:layout_gravity="center" android:id="@id/layoutPendentes" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imagePin" android:background="@drawable/circle_vermelho" android:padding="4.0dip" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/ic_pin_white_24dp" android:layout_alignTop="@id/layoutValor" android:layout_alignRight="@id/tipo" android:layout_centerVertical="true" android:alpha="0.9" android:layout_alignEnd="@id/tipo" />
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline1" android:textSize="12.0sp" android:textColor="@color/color_primary_expense" android:gravity="center" android:id="@id/valorPendentes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imagePin" />
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:textSize="15.0sp" android:id="@id/textPendentes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pendentes" android:layout_toRightOf="@id/imagePin" android:layout_below="@id/imagePin" android:layout_toEndOf="@id/imagePin" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

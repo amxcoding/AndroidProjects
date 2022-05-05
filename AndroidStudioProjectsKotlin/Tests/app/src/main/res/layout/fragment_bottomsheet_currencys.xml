@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:padding="@dimen/dimen_16" android:focusable="true" android:focusableInTouchMode="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="200.0dip">
+        <include android:id="@id/contentCurrencys" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/content_bottomsheet_currencys" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <include android:id="@id/contentExchange" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/content_bottomsheet_exchange" />
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

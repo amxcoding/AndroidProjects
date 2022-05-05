@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/action_soma_orcamentos" android:checked="false" android:visible="false" android:title="@string/mostrar_soma_todas_categorias" android:checkable="true" app:actionViewClass="android.widget.CheckBox" app:showAsAction="ifRoom|withText" />
+    <item android:id="@id/edit" android:orderInCategory="1" android:title="@string/editar" app:showAsAction="always" />
+    <item android:id="@id/delete" android:orderInCategory="1" android:title="@string/deletar" app:showAsAction="always" />
+</menu>

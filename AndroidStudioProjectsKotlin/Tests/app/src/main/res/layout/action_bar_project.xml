@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="?actionBarItemBackground" android:focusable="true" android:clickable="true" android:layout_width="38.0dip" android:layout_height="38.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivIconProject" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="@color/azul500" android:gravity="center" android:id="@id/tvCount" android:background="@drawable/rounded_square" android:paddingLeft="4.0dip" android:paddingTop="1.0dip" android:paddingRight="4.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="13.0dip" android:layout_alignTop="@id/ivIconProject" android:layout_alignRight="@id/ivIconProject" android:layout_alignEnd="@id/ivIconProject" />
+</RelativeLayout>

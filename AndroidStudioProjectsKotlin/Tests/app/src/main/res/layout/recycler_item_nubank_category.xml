@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/circleNubank" android:background="@drawable/circle_nubank" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="10.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="10.0dip" app:layout_constraintEnd_toStartOf="@id/tvCategoryNubank" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody2" android:id="@id/tvCategoryNubank" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintBottom_toBottomOf="@id/circleNubank" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/circleNubank" app:layout_constraintTop_toTopOf="@id/circleNubank" />
+        <include android:id="@id/layoutCategory" android:layout_width="fill_parent" android:layout_height="64.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/circleNubank" layout="@layout/layout_form_category" />
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" app:layout_constraintTop_toBottomOf="@id/layoutCategory" style="@style/Widget.Mobills.Divider" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

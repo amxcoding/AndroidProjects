@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/filter_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_8">
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody1" android:textSize="16.0sp" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="2.0dip" android:text="@string/filtro" android:layout_marginStart="8.0dip" android:layout_marginEnd="2.0dip" />
+        <HorizontalScrollView android:layout_gravity="center" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="wrap_content" android:fillViewport="true" android:layout_weight="1.0">
+            <com.google.android.material.chip.ChipGroup android:id="@id/filter_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_8" android:paddingEnd="@dimen/dimen_8" />
+        </HorizontalScrollView>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/filter_button" android:background="?selectableItemBackgroundBorderless" android:padding="@dimen/dimen_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="?colorPrimary" android:contentDescription="@string/contentDescription_remover_filtro" app:srcCompat="@drawable/ic_close_circle_outlined" />
+    </LinearLayout>
+</LinearLayout>

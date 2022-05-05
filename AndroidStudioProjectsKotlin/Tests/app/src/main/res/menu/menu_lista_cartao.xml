@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_inbox_outlined" android:id="@id/arquivar" android:orderInCategory="1" android:title="@string/arquivar" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_priority" android:id="@id/padrao" android:orderInCategory="2" android:title="@string/cartao_padrao" app:showAsAction="ifRoom" />
+    <item android:id="@id/menu_incluir_dashboard" android:title="@string/incluir_tela_inicial" android:checkable="true" app:showAsAction="never" />
+    <item android:id="@id/menu_item_period_filter" android:checked="false" android:title="@string/monthly_view" android:checkable="true" app:showAsAction="never" />
+    <item android:id="@id/menu_item_expand" android:checked="true" android:title="@string/expand" android:checkable="true" app:showAsAction="never" />
+    <item android:id="@id/menu_help" android:title="@string/ajuda_" android:checkable="false" app:showAsAction="never" />
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/image_dialog" android:layout_width="200.0dip" android:layout_height="170.0dip" android:layout_marginTop="16.0dip" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:gravity="center" android:id="@id/dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:gravity="center" android:id="@id/dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <com.google.android.material.button.MaterialButton android:textColor="?colorOnPrimary" android:layout_gravity="center" android:id="@id/ok_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" style="@style/Widget.Mobills.Button" />
+    <com.google.android.material.button.MaterialButton android:layout_gravity="center" android:id="@id/dismiss_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" app:strokeColor="@color/transparent" style="@style/Widget.Mobills.Button.Outlined" />
+</LinearLayout>

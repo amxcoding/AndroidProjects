@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" style="@style/Widget.Mobills.Toolbar">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:elevation="0.0dip" app:navigationIcon="@drawable/ic_arrow_left_outlined" style="@style/Widget.Mobills.Toolbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_width="fill_parent" android:layout_height="60.0dip" />
+            <View android:layout_width="fill_parent" android:layout_height="60.0dip" />
+            <View android:layout_width="fill_parent" android:layout_height="60.0dip" />
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView android:id="@id/scrollView" android:paddingBottom="64.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle2" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/valor_atual" />
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:layout_gravity="center" android:id="@id/investiment_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 00,00" />
+                </LinearLayout>
+                <include layout="@layout/investment_charts_card" />
+                <RelativeLayout android:id="@id/cardRisk" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <include layout="@layout/investment_risk_card" />
+                </RelativeLayout>
+                <include layout="@layout/investment_update_card" />
+                <include layout="@layout/investment_info_card" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:orientation="horizontal" android:id="@id/layoutTotal" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+        <com.getbase.floatingactionbutton.FloatingActionsMenu android:id="@id/floatActionMenu" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:fab_addButtonColorNormal="@color/azul700" app:fab_addButtonColorPressed="@color/azul800" app:fab_addButtonPlusIconColor="@color/white_87" app:fab_labelStyle="@style/menu_labels_style">
+            <com.getbase.floatingactionbutton.FloatingActionButton android:id="@id/adicionar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fab_colorNormal="@color/verde500" app:fab_colorPressed="@color/verde700" app:fab_icon="@drawable/ic_cash_usd_white_24dp" app:fab_size="mini" app:fab_title="@string/transacao" />
+            <com.getbase.floatingactionbutton.FloatingActionButton android:id="@id/atualizar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fab_colorNormal="@color/azul500" app:fab_colorPressed="@color/azul700" app:fab_icon="@drawable/update_white" app:fab_size="mini" app:fab_title="@string/atualizar" />
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </RelativeLayout>
+</LinearLayout>

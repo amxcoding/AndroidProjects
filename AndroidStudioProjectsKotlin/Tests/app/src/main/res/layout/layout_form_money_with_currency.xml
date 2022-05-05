@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/contentMoney" android:paddingTop="@dimen/dimen_16" android:paddingBottom="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="24.0dip" android:paddingEnd="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceCaption" android:textColor="?colorOnPrimary" android:id="@id/tvValueLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="?alphaEmphasisHigh" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline4" android:textColor="?colorOnPrimary" android:id="@id/tvMoneyValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:alpha="?alphaEmphasisHigh" />
+        <androidx.appcompat.widget.AppCompatTextView android:layout_gravity="center_vertical" android:id="@id/tvMoneyCurrency" android:paddingLeft="@dimen/dimen_8" android:paddingTop="@dimen/dimen_8" android:paddingBottom="@dimen/dimen_8" android:layout_width="wrap_content" android:layout_height="fill_parent" android:drawableRight="@drawable/ic_arrow_drop_down_grey600_24dp" android:drawableEnd="@drawable/ic_arrow_drop_down_grey600_24dp" android:paddingStart="@dimen/dimen_8" style="@style/Widget.Mobills.TextView.Currency" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceCaption" android:textColor="?colorOnPrimary" android:id="@id/tvMoneyCurrencyExchange" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="?alphaEmphasisHigh" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:orientation="vertical" android:tag="layout/recycler_item_blog_article_0" android:layout_width="310.0dip" android:layout_height="wrap_content" android:layout_margin="6.0dip" bind:cardPreventCornerOverlap="false" bind:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="280.0dip">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivBlog" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="160.0dip" android:scaleType="centerCrop" />
+        <com.google.android.material.card.MaterialCardView android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="136.0dip" bind:cardElevation="0.0dip">
+            <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:ellipsize="end" android:id="@id/tvBlogTitle" android:tag="binding_3" android:layout_width="0.0dip" android:layout_height="0.0dip" android:maxLines="3" android:alpha="?alphaEmphasisHigh" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" bind:layout_constraintBottom_toTopOf="@id/btnActionReadMore" bind:layout_constraintEnd_toEndOf="parent" bind:layout_constraintStart_toStartOf="parent" bind:layout_constraintTop_toTopOf="parent" />
+                <com.google.android.material.button.MaterialButton android:id="@id/btnActionMoreArticle" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/mais_artigos" bind:layout_constraintBottom_toBottomOf="parent" bind:layout_constraintEnd_toStartOf="@id/btnActionReadMore" style="@style/Widget.Mobills.Button.Text" />
+                <com.google.android.material.button.MaterialButton android:id="@id/btnActionReadMore" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/leia_mais" bind:layout_constraintBottom_toBottomOf="parent" bind:layout_constraintEnd_toEndOf="parent" style="@style/Widget.Mobills.Button.Text" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </FrameLayout>
+</com.google.android.material.card.MaterialCardView>

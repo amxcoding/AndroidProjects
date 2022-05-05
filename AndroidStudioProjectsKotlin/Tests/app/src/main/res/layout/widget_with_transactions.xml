@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="top" android:orientation="vertical" android:background="@drawable/back_widget" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/widget_layout" android:paddingTop="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/app" android:padding="-10.0dip" android:layout_width="40.0dip" android:layout_height="60.0dip" android:layout_marginRight="4.0dip" android:contentDescription="@null" android:layout_marginEnd="4.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="10.0sp" android:textColor="@color/branco" android:id="@id/mes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.7" android:textAllCaps="true" android:fontFamily="@font/notosans_regular" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/branco" android:gravity="center_vertical" android:id="@id/totalDespesas" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:textAllCaps="true" android:fontFamily="@font/mavenpro_medium" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/buttons" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/value_visibility" android:layout_width="34.0dip" android:layout_height="36.0dip" android:tint="@color/branco" />
+            <ImageView android:layout_gravity="center" android:id="@id/nova_despesa" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/branco" android:contentDescription="@string/nova_despesa" />
+            <ImageView android:layout_gravity="center" android:id="@id/listarDespesa" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/branco" android:contentDescription="@string/listar_despesa" />
+            <ImageView android:layout_gravity="center" android:id="@id/graficosDespesa" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/branco" android:contentDescription="@string/grafico_despesa" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="top" android:layout_gravity="top" android:id="@id/textNaoLogado" android:padding="5.0dip" android:paddingTop="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/mobills_logo_login" android:padding="-10.0dip" android:layout_width="38.0dip" android:layout_height="52.0dip" android:contentDescription="@null" />
+        <TextView android:textColor="@color/branco" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fazer_login" />
+    </LinearLayout>
+    <ListView android:id="@id/list_view_widget" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

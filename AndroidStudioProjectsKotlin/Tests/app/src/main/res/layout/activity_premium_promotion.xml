@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/color_surface" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" style="@style/Widget.Mobills.Toolbar.Surface">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlwaysCollapsed|scroll" style="@style/Widget.Mobills.Toolbar.Surface" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/nestedScroll" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <LinearLayout android:orientation="vertical" android:id="@id/contentRoot" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/ivPlanPromotionBannerHeader" android:layout_width="wrap_content" android:layout_height="164.0dip" app:srcCompat="@drawable/banner_promocao" />
+            <include layout="@layout/content_premium_plan_trigger_remaining_subscription" />
+            <include layout="@layout/content_premium_plan_trigger_timer" />
+            <include layout="@layout/content_premium_plan_promotional" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/img_faq_top" android:layout_width="wrap_content" android:layout_height="100.0dip" android:layout_marginTop="@dimen/dimen_16" app:srcCompat="@drawable/img_faq_footer" />
+            <include layout="@layout/content_premium_features" />
+            <include layout="@layout/content_premium_faq" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivPlanPromotionBannerFooter" android:layout_width="fill_parent" android:layout_height="184.0dip" android:scaleType="fitCenter" app:srcCompat="@drawable/img_footer" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:orientation="vertical" android:id="@id/cardCompleteRegistration" android:background="@color/branco" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.AppCompat.Large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/quase_la" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.AppCompat.Small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:text="@string/nos_conte_mais_sobre_voce" />
+            <ProgressBar android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="@dimen/dimen_16" android:layout_marginRight="16.0dip" app:layout_constraintTop_toBottomOf="@id/tvCardTitle" style="@style/Widget.Mobills.ProgressBar.Horizontal" />
+            <com.google.android.material.button.MaterialButton android:layout_gravity="center" android:id="@id/btnCompleteRegistration" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/completar_cadastro" app:backgroundTint="#ff2962ff" style="@style/Widget.Mobills.Button" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|center|top" android:id="@id/complete_registration_button" android:background="?selectableItemBackgroundBorderless" android:layout_width="24.0dip" android:layout_height="36.0dip" android:layout_margin="16.0dip" app:srcCompat="@drawable/ic_close_outlined" />
+    </FrameLayout>
+</com.google.android.material.card.MaterialCardView>

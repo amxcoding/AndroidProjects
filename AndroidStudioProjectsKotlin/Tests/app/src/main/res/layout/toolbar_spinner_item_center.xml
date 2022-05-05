@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline6" android:textColor="?colorOnPrimary" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:singleLine="true" android:textAlignment="inherit" android:layout_marginStart="@dimen/dimen_16" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:tint="?colorOnPrimary" android:layout_marginStart="@dimen/dimen_16" app:srcCompat="@drawable/ic_chevron_down" />
+</LinearLayout>

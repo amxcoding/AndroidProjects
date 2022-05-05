@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="200.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/contentCategories" android:paddingBottom="88.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/contentSearch" android:background="?selectableItemBackground" android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivSearch" android:background="@drawable/btn_shape_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerInside" app:srcCompat="@drawable/ic_magnify_outlined" app:tint="#ffffffff" />
+                <androidx.appcompat.widget.AppCompatEditText android:textAppearance="?textAppearanceSubtitle1" android:layout_gravity="center_vertical" android:id="@id/edtSearch" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:hint="@string/pesquisar_categoria" android:maxLines="1" android:inputType="textCapSentences" android:imeOptions="actionSearch" android:layout_marginStart="@dimen/dimen_16" />
+            </LinearLayout>
+            <View android:id="@id/dividerSearch" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rvCategories" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/contentManager" android:background="?selectableItemBackground" android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivCategoryManager" android:background="@drawable/btn_shape_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerInside" app:srcCompat="@drawable/ic_settings_outlined" app:tint="#ffffffff" />
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_gravity="center_vertical" android:id="@id/tvCategoryManager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:text="@string/gerenciar_categorias" android:layout_marginStart="@dimen/dimen_16" />
+            </LinearLayout>
+            <View android:id="@id/dividerManager" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/contentAdd" android:background="?selectableItemBackground" android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:background="@drawable/btn_shape_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerInside" app:srcCompat="@drawable/ic_add_white_24dp" app:tint="#ffffffff" />
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:text="@string/criar_nova_categoria" android:layout_marginStart="@dimen/dimen_16" />
+            </LinearLayout>
+            <View android:id="@id/dividerAdd" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/contentAddSub" android:background="?selectableItemBackground" android:padding="@dimen/dimen_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:background="@drawable/btn_shape_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerInside" app:srcCompat="@drawable/ic_add_white_24dp" app:tint="#ffffffff" />
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:text="@string/criar_nova_subcategoria" android:layout_marginStart="@dimen/dimen_16" />
+            </LinearLayout>
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

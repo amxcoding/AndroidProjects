@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="right" android:layout_gravity="right" android:id="@id/textNome" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="RAFAEL BRUNO SOARES FARIAS" android:singleLine="true" />
+        <TextView android:gravity="right" android:layout_gravity="right" android:id="@id/textEmpresa" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="CPM BRAXIS SA" android:singleLine="true" />
+        <TextView android:gravity="right" android:layout_gravity="right" android:id="@id/textCarteira" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="4095681 - 00030" android:singleLine="true" />
+        <TextView android:gravity="right" android:layout_gravity="right" android:id="@id/textInscricao" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="\ 65599953002883" />
+        <TextView android:gravity="right" android:layout_gravity="right" android:id="@id/textTipoConta" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="OPTANTE" />
+        <TextView android:gravity="right" android:layout_gravity="right" android:id="@id/textDataAdmissao" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="27/10/2014" />
+        <TextView android:gravity="right" android:layout_gravity="right" android:id="@id/textContaFGTS" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="\ 00002566928" />
+        <TextView android:gravity="right" android:layout_gravity="right" android:id="@id/textTaxaJuros" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="3%" />
+        <TextView android:gravity="right" android:layout_gravity="right" android:id="@id/textValorRescisorio" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

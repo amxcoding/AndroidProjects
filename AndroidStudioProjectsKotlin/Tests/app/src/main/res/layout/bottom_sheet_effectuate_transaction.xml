@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="124.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_margin="8.0dip">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/icon_transaction" android:background="@drawable/ic_rounded_outlined" android:layout_width="42.0dip" android:layout_height="42.0dip" android:scaleType="centerInside" android:tint="@color/color_primary_expense" app:srcCompat="@drawable/ic_trending_down" />
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/txt_transaction_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/contentValue" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="64.0dip">
+                <androidx.appcompat.widget.AppCompatImageView android:padding="@dimen/dimen_8" android:layout_width="50.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" app:srcCompat="@drawable/ic_cash_outlined" />
+                <com.google.android.material.textfield.TextInputEditText android:textAppearance="@style/TextAppearance.Mobills.Form.InputField" android:gravity="center_vertical" android:id="@id/inputFieldValue" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/valor" android:maxLines="1" android:layout_weight="1.0" android:inputType="number" android:paddingStart="@dimen/dimen_16" android:paddingEnd="@dimen/dimen_16" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/contentDate" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="64.0dip">
+                <androidx.appcompat.widget.AppCompatImageView android:padding="@dimen/dimen_8" android:layout_width="50.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" app:srcCompat="@drawable/ic_calendar_checked_outlined" />
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.Mobills.Form.InputField" android:gravity="center_vertical" android:id="@id/tvDate" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/data" android:maxLines="1" android:layout_weight="1.0" android:paddingStart="@dimen/dimen_16" android:paddingEnd="@dimen/dimen_16" />
+                <com.google.android.material.chip.ChipGroup android:layout_gravity="center_vertical" android:id="@id/chipGroupDate" android:visibility="visible" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/dimen_16" android:paddingEnd="@dimen/dimen_16" app:chipSpacing="@dimen/dimen_8" app:singleSelection="true">
+                    <com.google.android.material.chip.Chip android:id="@id/chipToday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hoje_lowcase" style="@style/Widget.Mobills.Chip.Choice" />
+                    <com.google.android.material.chip.Chip android:id="@id/chipYesterday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ontem_lowcase" style="@style/Widget.Mobills.Chip.Choice" />
+                    <com.google.android.material.chip.Chip android:id="@id/chipOther" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/outros" style="@style/Widget.MaterialComponents.Chip.Action" />
+                </com.google.android.material.chip.ChipGroup>
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.Mobills.Form.InputField" android:gravity="center" android:id="@id/tvRepeatPortion" android:padding="@dimen/dimen_16" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <View android:id="@id/viewDividerDate" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+            <include android:id="@id/contentAccount" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="64.0dip" app:layout_constraintTop_toBottomOf="@id/viewDividerDate" layout="@layout/layout_form_account" />
+            <View android:id="@id/viewDividerAccount" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:id="@id/contentActions" android:padding="@dimen/dimen_8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton android:id="@id/btnActionNegative" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_4" android:text="@string/cancelar" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dimen_4" style="@style/Widget.Mobills.Button.Outlined" />
+        <com.google.android.material.button.MaterialButton android:id="@id/btnActionPositive" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_4" android:text="@string/receber" android:layout_weight="1.0" android:layout_marginStart="@dimen/dimen_4" style="@style/Widget.Mobills.Button" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

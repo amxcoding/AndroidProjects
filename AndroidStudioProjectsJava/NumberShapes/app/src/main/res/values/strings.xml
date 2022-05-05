@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">NumberShapes</string>
+    <string name="numberShape">Check if a number is a triangular number, square number or both.</string>
+    <string name="checkButton">Check</string>
+    <string name="enterNumber">Enter number</string>
+</resources>

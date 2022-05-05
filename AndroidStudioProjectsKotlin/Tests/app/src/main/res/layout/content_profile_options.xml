@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:paddingBottom="128.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/rowMyRegister" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <androidx.appcompat.widget.AppCompatImageView android:padding="8.0dip" android:layout_width="50.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" app:srcCompat="@drawable/ic_person_outlined" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.Mobills.Form.InputField" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/meu_cadastro" android:maxLines="1" android:layout_weight="1.0" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    </LinearLayout>
+    <View android:id="@id/dividerMyRegister" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/rowMobillsPremium" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <androidx.appcompat.widget.AppCompatImageView android:padding="8.0dip" android:layout_width="50.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" app:srcCompat="@drawable/ic_premium_outlined" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.Mobills.Form.InputField" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/mobills_premium" android:maxLines="1" android:layout_weight="1.0" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    </LinearLayout>
+    <View android:id="@id/dividerMobillsPremium" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/rowMyPoints" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <androidx.appcompat.widget.AppCompatImageView android:padding="8.0dip" android:layout_width="50.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" app:srcCompat="@drawable/ic_coins_mbs_outlined" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.Mobills.Form.InputField" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/meus_pontos" android:maxLines="1" android:layout_weight="1.0" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    </LinearLayout>
+    <View android:id="@id/dividerMyPoints" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/rowFriends" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <androidx.appcompat.widget.AppCompatImageView android:padding="8.0dip" android:layout_width="50.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" app:srcCompat="@drawable/ic_friends_outlined" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.Mobills.Form.InputField" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/amigos" android:maxLines="1" android:layout_weight="1.0" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    </LinearLayout>
+    <View android:id="@id/dividerFriends" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" style="@style/Widget.Mobills.Divider" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/rowLogout" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <androidx.appcompat.widget.AppCompatImageView android:padding="8.0dip" android:layout_width="50.0dip" android:layout_height="fill_parent" android:scaleType="centerInside" app:srcCompat="@drawable/ic_exit_outlined" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.Mobills.Form.InputField" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/logout" android:maxLines="1" android:layout_weight="1.0" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

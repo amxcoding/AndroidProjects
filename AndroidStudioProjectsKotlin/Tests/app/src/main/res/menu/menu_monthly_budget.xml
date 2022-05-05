@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="all">
+        <item android:icon="@drawable/ic_delete_outlined" android:id="@id/menu_item_delete" android:title="@string/deletar" app:showAsAction="ifRoom" />
+        <item android:id="@id/menu_item_include_expected" android:title="@string/incluir_previsto" android:checkable="true" app:showAsAction="never" />
+        <item android:id="@id/menu_item_include_credit" android:title="@string/custom_budget_menu_include_card" android:checkable="true" app:showAsAction="never" />
+        <item android:id="@id/menu_item_expand" android:checked="true" android:title="@string/custom_budget_menu_expand" android:checkable="true" app:showAsAction="never" />
+        <item android:id="@id/menu_help" android:title="@string/ajuda_" android:checkable="false" app:showAsAction="never" />
+    </group>
+</menu>

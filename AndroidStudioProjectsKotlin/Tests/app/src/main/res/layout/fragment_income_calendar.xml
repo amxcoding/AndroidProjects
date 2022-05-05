@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center|top" android:orientation="vertical" android:id="@id/empty_state" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="109.0dip" android:layout_height="106.0dip" app:srcCompat="@drawable/ic_ilustra_goals" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle2" android:layout_gravity="center" android:id="@id/empty_state_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_day_on_calendar" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/income_recycler" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

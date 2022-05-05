@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/cardPost" android:layout_width="fill_parent" android:layout_height="148.0dip" app:cardCornerRadius="@dimen/dimen_16" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivPostImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_gravity="bottom" android:id="@id/tvPostCategory" android:background="@drawable/bg_round_outline" android:paddingTop="@dimen/dimen_8" android:paddingBottom="@dimen/dimen_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_8" android:paddingStart="@dimen/dimen_16" android:paddingEnd="@dimen/dimen_16" />
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceSubtitle1" android:ellipsize="end" android:id="@id/tvPostTitle" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_8" android:maxLines="2" android:layout_marginStart="@dimen/dimen_8" android:layout_marginEnd="@dimen/dimen_8" />
+</LinearLayout>

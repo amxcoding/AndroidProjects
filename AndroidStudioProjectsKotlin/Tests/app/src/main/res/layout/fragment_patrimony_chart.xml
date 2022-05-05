@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="180.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.mikephil.charting.charts.LineChart android:id="@id/patrimonyChart" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginBottom="8.0dip" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/sem_dados_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/iconSemPie" android:padding="8.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_centerHorizontal="true" app:srcCompat="@drawable/chart_line_grey400" />
+        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:gravity="center" android:layout_gravity="center" android:background="@drawable/badget_button_grey_round" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingRight="12.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/nao_existe_dados_grafico_line" android:layout_below="@id/iconSemPie" android:layout_centerHorizontal="true" android:textAllCaps="true" />
+    </LinearLayout>
+</FrameLayout>

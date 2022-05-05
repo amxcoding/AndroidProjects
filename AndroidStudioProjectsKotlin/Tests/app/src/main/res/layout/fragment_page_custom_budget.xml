@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/contentCustomBudgetEmpty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/content_custom_budget_empty" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvBudget" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.button.MaterialButton android:id="@id/btnNewCustomBudget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="124.0dip" android:text="@string/custom_budget_btn_new_custom_budget" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/rvBudget" style="@style/Widget.Mobills.Button.Text" />
+        <androidx.constraintlayout.widget.Group android:id="@id/contentCustomBudget" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:constraint_referenced_ids="rvBudget,btnNewCustomBudget" />
+        <ProgressBar android:id="@id/progressBar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

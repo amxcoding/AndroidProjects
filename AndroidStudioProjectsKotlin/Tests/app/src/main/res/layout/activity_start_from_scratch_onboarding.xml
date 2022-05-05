@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" style="@style/Widget.Mobills.Toolbar.Background">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" app:navigationIcon="@drawable/ic_close_outlined" style="@style/Widget.Mobills.Toolbar.Background" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="63.0dip" android:layout_height="58.0dip" android:layout_marginLeft="6.0dip" android:layout_marginStart="6.0dip" app:srcCompat="@drawable/nova_logo_sombra" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/start_from_start_onboarding_title" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/start_from_start_onboarding_message" android:alpha="0.7" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16" />
+            <com.google.android.material.card.MaterialCardView android:id="@id/cardViewPositive" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:cardElevation="6.0dip" app:cardUseCompatPadding="true">
+                <LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="24.0dip" android:paddingEnd="24.0dip">
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline6" android:textColor="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/continue_where_i_left" android:alpha="?alphaEmphasisHigh" />
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/continue_where_i_left_message" android:alpha="?alphaEmphasisMedium" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:id="@id/cardViewNegative" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:cardElevation="6.0dip" app:cardUseCompatPadding="true">
+                <LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="24.0dip" android:paddingEnd="24.0dip">
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline6" android:textColor="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/comecar_do_zero" android:alpha="?alphaEmphasisHigh" />
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/start_from_scratch_message" android:alpha="?alphaEmphasisMedium" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
